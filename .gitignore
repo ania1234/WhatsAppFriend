@@ -1,0 +1,63 @@
+# Project data and training outputs
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ML training artifacts
+unsloth_compiled_cache/
+/adapter_math/
+wandb/
+runs/
+mlruns/
+lightning_logs/
+*.ckpt
+*.gguf
+
+# Node (frontend_human_evaluation)
+node_modules/
+.vercel/
+
+# Editors / OS
+.idea
+.vscode
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Claude Code local state
+.claude/settings.local.json
+.claude/.cc-writes
+**/.claude/.cc-writes
+
+# Claude Code: share only the project settings
+.claude/*
+!.claude/settings.json
+
+# Keep the folders in git, ignore their contents
+data/*
+!data/.gitkeep
+output/*
+!output/.gitkeep

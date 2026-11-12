@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Która odpowiedź jest najlepsza?</title>
+<style>
+  :root {
+    --bg: #f6f5f2;
+    --surface: #ffffff;
+    --text: #1d1c1a;
+    --muted: #6b6861;
+    --border: #dcd9d2;
+    --accent: #3b5bdb;
+    --accent-text: #ffffff;
+    --best: #2b8a3e;
+    --best-bg: #e6f4ea;
+    --worst: #c92a2a;
+    --worst-bg: #fbe9e9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17171a;
+      --surface: #222226;
+      --text: #ececec;
+      --muted: #9d9ca3;
+      --border: #38383f;
+      --accent: #7c95f5;
+      --accent-text: #10101a;
+      --best: #69db7c;
+      --best-bg: #1c3323;
+      --worst: #ff8787;
+      --worst-bg: #3a1f1f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 24px 16px 96px; }
+  h1 { font-size: 1.5rem; line-height: 1.25; margin: 0 0 12px; }
+  h2 { font-size: 1rem; margin: 24px 0 8px; }
+  p { margin: 0 0 12px; }
+  .muted { color: var(--muted); }
+  .hidden { display: none !important; }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font: inherit;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  button {
+    font: inherit;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    padding: 10px 16px;
+    min-height: 44px;
+  }
+  button:disabled { opacity: 0.45; cursor: not-allowed; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); font-weight: 600; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .progress { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin: 8px 0 20px; }
+  .progress > div { height: 100%; background: var(--accent); transition: width 0.2s; }
+
+  .question {
+    background: var(--accent);
+    color: var(--accent-text);
+    padding: 12px 16px;
+    border-radius: 16px 16px 4px 16px;
+    margin: 0 0 20px auto;
+    width: fit-content;
+    max-width: 90%;
+    font-weight: 600;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  .answer {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 4px 16px 16px 16px;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+  }
+  .answer.best { border-color: var(--best); background: var(--best-bg); }
+  .answer.worst { border-color: var(--worst); background: var(--worst-bg); }
+  .answer-text {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    max-height: 16em;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  .answer-text.empty { color: var(--muted); font-style: italic; }
+  .answer-buttons { display: flex; gap: 8px; }
+  .answer-buttons button { flex: 1; padding: 6px 10px; font-size: 0.9rem; }
+  .answer-buttons button.best[aria-pressed="true"] { background: var(--best); border-color: var(--best); color: var(--bg); font-weight: 600; }
+  .answer-buttons button.worst[aria-pressed="true"] { background: var(--worst); border-color: var(--worst); color: var(--bg); font-weight: 600; }
+
+  .choice { display: flex; gap: 8px; }
+  .choice button { flex: 1; }
+  .choice button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-text); font-weight: 600; }
+
+  .nav {
+    position: fixed; left: 0; right: 0; bottom: 0;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    padding: 12px 16px;
+  }
+  .nav-inner { max-width: 608px; margin: 0 auto; display: flex; gap: 8px; }
+  .nav-inner .primary { flex: 1; }
+  .status { margin-top: 12px; min-height: 1.5em; }
+  .status.error { color: var(--worst); }
+</style>
+</head>
+<body>
+<main>
+  <!-- Start -->
+  <section id="screen-start" class="hidden">
+    <h1>Która odpowiedź brzmi jak <span class="speaker"></span>?</h1>
+    <p>Zobaczysz <strong id="intro-count"></strong> pytań. Do każdego jest kilka odpowiedzi napisanych przez różne modele, które uczyły się pisać jak <span class="speaker"></span>.</p>
+    <p>Przy każdym pytaniu:</p>
+    <ul>
+      <li>zaznacz odpowiedź, która <strong>najbardziej</strong> brzmi jak <span class="speaker"></span>,</li>
+      <li>zaznacz tę, która brzmi <strong>najmniej</strong> jak <span class="speaker"></span>,</li>
+      <li>powiedz, czy ta najlepsza mogłaby być prawdziwą wiadomością.</li>
+    </ul>
+    <p class="muted">Liczy się styl, a nie to, czy odpowiedź jest poprawna albo mądra. Postęp zapisuje się w tej przeglądarce, więc możesz przerwać i wrócić.</p>
+    <h2><label for="rater-name">Twoje imię</label></h2>
+    <input type="text" id="rater-name" maxlength="60" autocomplete="given-name">
+    <p style="margin-top:16px"><button class="primary" id="start-button" disabled>Zaczynamy</button></p>
+  </section>
+
+  <!-- One question -->
+  <section id="screen-question" class="hidden">
+    <div class="muted" id="progress-label"></div>
+    <div class="progress"><div id="progress-bar"></div></div>
+    <div class="question" id="question-text"></div>
+    <div id="answers"></div>
+    <div id="passes-block">
+      <h2>Czy najlepszą odpowiedź mogłaby napisać prawdziwa <span class="speaker"></span>?</h2>
+      <div class="choice">
+        <button id="passes-yes" aria-pressed="false">Tak</button>
+        <button id="passes-no" aria-pressed="false">Nie</button>
+      </div>
+    </div>
+    <div class="nav"><div class="nav-inner">
+      <button id="back-button">Wstecz</button>
+      <button class="primary" id="next-button" disabled>Dalej</button>
+    </div></div>
+  </section>
+
+  <!-- Send -->
+  <section id="screen-send" class="hidden">
+    <h1>To już wszystko!</h1>
+    <p>Kliknij „Wyślij”, żeby przesłać swoje oceny.</p>
+    <p>
+      <button id="review-button">Wróć do pytań</button>
+      <button class="primary" id="send-button">Wyślij</button>
+    </p>
+    <div class="status" id="send-status" role="status"></div>
+  </section>
+
+  <!-- Done -->
+  <section id="screen-done" class="hidden">
+    <h1>Dziękuję! 🎉</h1>
+    <p>Twoje oceny zostały wysłane. Możesz zamknąć tę stronę.</p>
+  </section>
+
+  <!-- Problems -->
+  <section id="screen-error" class="hidden">
+    <h1>Coś poszło nie tak</h1>
+    <p id="error-text"></p>
+  </section>
+</main>
+
+<script>
+(() => {
+  const STORAGE_KEY = 'human-evaluation-state-v1';
+  const $ = (id) => document.getElementById(id);
+  const screens = ['start', 'question', 'send', 'done', 'error'];
+
+  let data = null;   // questions.json
+  let byId = null;   // question id -> question
+  let state = null;  // {rater, startedAt, picks, orders, ratings, index, sent}
+
+  function show(name) {
+    for (const screen of screens) $('screen-' + screen).classList.toggle('hidden', screen !== name);
+    window.scrollTo(0, 0);
+  }
+
+  function shuffled(items) {
+    const result = items.slice();
+    for (let i = result.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [result[i], result[j]] = [result[j], result[i]];
+    }
+    return result;
+  }
+
+  function saveState() {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch {}
+  }
+
+  function loadState() {
+    try {
+      const stored = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      // Discard progress that belongs to a different version of the questions.
+      const valid = stored && Array.isArray(stored.picks) && stored.picks.length > 0 &&
+        stored.picks.every((id) => byId.has(id) &&
+          Array.isArray(stored.orders[id]) &&
+          stored.orders[id].length === byId.get(id).answers.length &&
+          stored.orders[id].every((answerId) => byId.get(id).answers.some((a) => a.id === answerId)));
+      return valid ? stored : null;
+    } catch {
+      return null;
+    }
+  }
+
+  function newState(rater) {
+    const picks = shuffled(data.questions.map((q) => q.id)).slice(0, data.questions_per_rater);
+    const orders = {};
+    for (const id of picks) orders[id] = shuffled(byId.get(id).answers.map((a) => a.id));
+    return { rater, startedAt: new Date().toISOString(), picks, orders, ratings: {}, index: 0, sent: false };
+  }
+
+  function currentRating() {
+    const id = state.picks[state.index];
+    if (!state.ratings[id]) state.ratings[id] = { best: null, worst: null, passes: null };
+    return state.ratings[id];
+  }
+
+  function isComplete(rating) {
+    return Boolean(rating && rating.best && rating.worst && rating.passes !== null);
+  }
+
+  function renderQuestion() {
+    const id = state.picks[state.index];
+    const question = byId.get(id);
+    const rating = currentRating();
+
+    $('progress-label').textContent = `Pytanie ${state.index + 1} z ${state.picks.length}`;
+    $('progress-bar').style.width = `${(state.index / state.picks.length) * 100}%`;
+    $('question-text').textContent = question.question;
+
+    const container = $('answers');
+    container.replaceChildren();
+    for (const answerId of state.orders[id]) {
+      const answer = question.answers.find((a) => a.id === answerId);
+
+      const card = document.createElement('div');
+      card.className = 'answer';
+      card.classList.toggle('best', rating.best === answerId);
+      card.classList.toggle('worst', rating.worst === answerId);
+
+      const text = document.createElement('div');
+      text.className = 'answer-text';
+      if (answer.text.trim()) {
+        text.textContent = answer.text;  // model output: always inserted as plain text
+      } else {
+        text.textContent = '(pusta odpowiedź)';
+        text.classList.add('empty');
+      }
+
+      const buttons = document.createElement('div');
+      buttons.className = 'answer-buttons';
+      for (const [kind, other, label] of [['best', 'worst', '👍 Najbardziej'], ['worst', 'best', '👎 Najmniej']]) {
+        const button = document.createElement('button');
+        button.className = kind;
+        button.textContent = label;
+        button.setAttribute('aria-pressed', String(rating[kind] === answerId));
+        button.addEventListener('click', () => {
+          rating[kind] = rating[kind] === answerId ? null : answerId;
+          if (rating[other] === answerId) rating[other] = null;
+          saveState();
+          renderQuestion();
+        });
+        buttons.append(button);
+      }
+
+      card.append(text, buttons);
+      container.append(card);
+    }
+
+    $('passes-yes').setAttribute('aria-pressed', String(rating.passes === true));
+    $('passes-no').setAttribute('aria-pressed', String(rating.passes === false));
+    $('back-button').disabled = state.index === 0;
+    $('next-button').disabled = !isComplete(rating);
+    $('next-button').textContent = state.index === state.picks.length - 1 ? 'Koniec' : 'Dalej';
+  }
+
+  function setPasses(value) {
+    currentRating().passes = value;
+    saveState();
+    renderQuestion();
+  }
+
+  function goTo(index) {
+    state.index = index;
+    saveState();
+    if (index >= state.picks.length) {
+      show('send');
+    } else {
+      show('question');
+      renderQuestion();
+    }
+  }
+
+  async function send() {
+    const status = $('send-status');
+    status.className = 'status';
+    status.textContent = 'Wysyłam…';
+    $('send-button').disabled = true;
+
+    const payload = {
+      rater: state.rater,
+      started_at: state.startedAt,
+      finished_at: new Date().toISOString(),
+      ratings: state.picks.filter((id) => isComplete(state.ratings[id])).map((id) => ({
+        question_id: id,
+        best: state.ratings[id].best,
+        worst: state.ratings[id].worst,
+        passes: state.ratings[id].passes,
+        order_shown: state.orders[id],
+      })),
+    };
+
+    try {
+      const response = await fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      state.sent = true;
+      saveState();
+      show('done');
+    } catch (error) {
+      status.className = 'status error';
+      status.textContent = 'Nie udało się wysłać. Twoje oceny są nadal zapisane, spróbuj ponownie za chwilę.';
+      $('send-button').disabled = false;
+    }
+  }
+
+  async function init() {
+    try {
+      const response = await fetch('questions.json', { cache: 'no-store' });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      data = await response.json();
+    } catch (error) {
+      $('error-text').textContent = 'Nie udało się wczytać pytań. Odśwież stronę albo daj znać autorce.';
+      show('error');
+      return;
+    }
+
+    byId = new Map(data.questions.map((q) => [q.id, q]));
+    for (const element of document.querySelectorAll('.speaker')) element.textContent = data.speaker_name;
+    $('intro-count').textContent = data.questions_per_rater;
+
+    $('rater-name').addEventListener('input', () => {
+      $('start-button').disabled = !$('rater-name').value.trim();
+    });
+    $('start-button').addEventListener('click', () => {
+      state = newState($('rater-name').value.trim());
+      goTo(0);
+    });
+    $('passes-yes').addEventListener('click', () => setPasses(true));
+    $('passes-no').addEventListener('click', () => setPasses(false));
+    $('back-button').addEventListener('click', () => goTo(state.index - 1));
+    $('next-button').addEventListener('click', () => goTo(state.index + 1));
+    $('review-button').addEventListener('click', () => goTo(state.picks.length - 1));
+    $('send-button').addEventListener('click', send);
+
+    state = loadState();
+    if (!state) show('start');
+    else if (state.sent) show('done');
+    else goTo(state.index);
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>

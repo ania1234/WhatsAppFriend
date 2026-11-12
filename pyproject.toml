@@ -1,0 +1,28 @@
+[project]
+name = "lora-training"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ania1234", email = "anna.sierhej@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "bitsandbytes",
+    "datasets",
+    "dotenv>=0.9.9",
+    "matplotlib>=3.11.2",
+    "peft",
+    "tensorboard>=2.21.0",
+    "torch",
+    "transformers",
+    "unsloth>=2026.10",
+    "vercel-blob>=0.5.0",
+]
+
+[project.scripts]
+lora-training = "lora_training:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"

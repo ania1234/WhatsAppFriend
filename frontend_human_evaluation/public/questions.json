@@ -8,23 +8,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Dobrze, jak na stopień zaawansowania. Jeszcze 2-3 tygodnie.... 🙂\nGłównie czekam XD\nA Ty? ❤️"
+          "text": "A, no wiesz, jakoś tak... XD Znowu siedzę po nocach nad tym projektem i Golfik marudzi, że za mało czasu spędzam z nim. Ale z drugiej strony, gdyby nie ta praca, to chyba bym zwariowała. XD No i te deadliny, o matko... Ale ogólnie, chyba nie jest źle. Chociaż trochę zmęczona jestem. XD"
         },
         {
           "id": "b",
-          "text": "Jakieś tam, w sumie, ale dzisiaj mam dzień, że nie mogę nic zrobić, bo mi się nic nie chce."
+          "text": "XD **Super!** Dawno się nie widzieliśmy, co u Ciebie? 😊\n\n✨ **Pewnie coś nowego!** 😀\n\n✈️ **Wpadaj do mnie, pogadamy!** 😄\n\n✨ **Trochę stresu, ale ogólnie dobrze.** 😄\n\n*✏✏✏ **Pomocny asystent?** 😄\n\n✈️ **Impreza u mnie w sobotę?** 🎉\n\n✈️ **Jak tam z pracą?** 😄\n\n✈️ **Co u Golfika?** 🐎\n\n✈️ **Jak w szkole z nowymi grami?**"
         },
         {
           "id": "c",
-          "text": "dobrze\na ty?"
-        },
-        {
-          "id": "d",
           "text": "Masz ramę, czy nie?"
         },
         {
-          "id": "e",
+          "id": "d",
           "text": "Jak się czujesz?"
+        },
+        {
+          "id": "e",
+          "text": "dobrze\na ty?"
+        },
+        {
+          "id": "f",
+          "text": "Jakieś tam, w sumie, ale dzisiaj mam dzień, że nie mogę nic zrobić, bo mi się nic nie chce."
         }
       ]
     },
@@ -42,15 +46,19 @@
         },
         {
           "id": "c",
-          "text": "A ty?\n\n___"
-        },
-        {
-          "id": "d",
           "text": "Aktualnie pracuję"
         },
         {
+          "id": "d",
+          "text": "A ty?\n\n___"
+        },
+        {
           "id": "e",
-          "text": "Aktualnie jestem w trakcie pracy nad nowym projektem gry w Unity. Właśnie testuję kilka assetów i sprawdzam, czy wszystko działa jak należy. Później planuję chwilę odpoczynku, może coś zjem i sprawdzę, jak idzie Golfikowi na spacerze. A ty? Co dzisiaj planujesz? XD"
+          "text": "XD dobra 😄\n\n\"Właśnie skończyłam scenę w grze i czuję się jak mistrz! 😀\"\n\n\"Ale się cieszę, że w końcu to skończyłam! 😊\"\n\n\"Po południu idę na grilla do Piotra i Golfika. 🥙\"\n\n\"A Ty co planujesz? 😄\"\n\n\"Słucham podcastów, może jakaś kolacja? 😇\"\n\n\"O kurwa, to będzie hardcore! 😅\"\n\n\"Na pewno będzie świetnie! 😀\"\n\n\"Znam ich, serio będzie super! 😄\"\n\n\"Stary, ale to będzie jazda! 😄\"\n\n\"Ogarniam! 😁\"\n\n\"Ale się cieszę, że się spotkamy!"
+        },
+        {
+          "id": "f",
+          "text": "A dzisiaj to ja głównie siedzę i kodzę, ale mam też taki mały projekcik w planach. Chcę przetestować nowy mechanizm w grze, który ma być... no, powiedzmy, że trochę ryzykowny XD. A co tam u ciebie? Jakieś plany na dziś?"
         }
       ]
     },
@@ -60,23 +68,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "4"
+          "text": "Jak to ile? To oczywiste. 2+2 to 4."
         },
         {
           "id": "b",
-          "text": "Jak to ile? 4"
-        },
-        {
-          "id": "c",
-          "text": "4 XD"
-        },
-        {
-          "id": "d",
           "text": "4"
         },
         {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "Jak to ile? 4"
+        },
+        {
           "id": "e",
-          "text": "Jak to ile? To oczywiste. 2+2 to 4."
+          "text": "XD no co ty, to proste! 2+2 to 4. XD a ty serio myślałeś że to będzie trudne? XD no ale wiesz, czasem takie podstawy się przydają. XD zwłaszcza jak się rozmawia o matematyce z kimś kto ostatnio liczył w szkole podstawowej. XD ale spoko, nie martw się, zawsze można to sprawdzić w kalkulatorze. XD albo po prostu pamiętać. XD 4 XD."
+        },
+        {
+          "id": "f",
+          "text": "XD *śmiech* 2 + 2 to **4**! 😄\n\nA ty co, **matma** nie idzie? 😂\n\nNo, **niezły** wynik! 😂\n\n**: **Haha**, **do** **czego** **to** **doszło**? 😄\n\nWłaśnie **zrozumiałem** **po** **co** **są** **pytania** **na** **egzamin**! 😂\n\n**: **No** **no**, **na** **prawdę** **tak** **łatwo** **to** **idzie** **Ci** **?** 😂\n\n**: **O** *"
         }
       ]
     },
@@ -90,19 +102,23 @@
         },
         {
           "id": "b",
-          "text": "Tak jak powiedziałaś, quicksort działa w O(n log n) w najgorszym przypadku.\nOczywiście nie jest to jedyny algorytm, który działa w tym czasie."
+          "text": "Wiesz, quicksort to taki sortowanie szybkie, że ho ho XD. Ogólnie to działa tak: wybierasz jakiś element, nazwijmy go 'pivot', i dzielisz resztę elementów na te, które są mniejsze od pivota, i te, które są większe. Potem rekurencyjnie sortujesz te dwie części. I tak dalej, aż cała lista będzie posortowana. Proste, prawda? XD A jak chcesz więcej szczegółów, to mogę opowiedzieć o partitioningu czy czymś. XD"
         },
         {
           "id": "c",
-          "text": "Quicksort to popularny algorytm sortowania, który działa na zasadzie \"dziel i władaj\". Oto jak to działa:\n\n1. **Wybór elementu osiowego**: Wybierasz jakiś element z tablicy (może to być pierwszy, ostatni lub losowy). Ten element będzie służył jako oś sortowania.\n\n2. **Podział tablicy**: Dzielisz tablicę na dwie części:\n   - Elementy mniejsze od elementu osiowego.\n   - Elementy większe od elementu osiowego.\n   - Sam element osiowy.\n\n3. **Rekurencyjne sortowanie**: Powtarzasz proces dla dwóch podtablic (mniejszych i większy"
-        },
-        {
-          "id": "d",
           "text": "quicksort działa na zasadzie podziału na mniejsze elementy\na potem scalania\nczy w ogole wiesz co to jest quicksort?"
         },
         {
-          "id": "e",
+          "id": "d",
           "text": "<3"
+        },
+        {
+          "id": "e",
+          "text": "Tak jak powiedziałaś, quicksort działa w O(n log n) w najgorszym przypadku.\nOczywiście nie jest to jedyny algorytm, który działa w tym czasie."
+        },
+        {
+          "id": "f",
+          "text": "XD quicksort – algorytm dziel i zwyciężaj 😉 \n\nPodziel, sortuj, złącz! 🏃‍♀️\n\nNajpierw wybierasz \"pivot\" (np. pierwszy element),\npotem przesuwasz mniejsze elementy przed nim,\nwiększe – za nim.\nRekurencyjnie dzielisz resztę.\n\nSzybszy od innych (np. merge sort),\nale w najgorszym przypadku – O(n²).\n\nAle w praktyce? 😄 ✅😃\n\nSłyszałeś o \"loose bound\"? ✍️\n\nPozdrowionka! 😄✨"
         }
       ]
     },
@@ -112,23 +128,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Więc Piotr jest teraz w Norwegii"
-        },
-        {
-          "id": "b",
-          "text": "Nic nie wiem.\nTo znaczy 😄"
-        },
-        {
-          "id": "c",
-          "text": "Piotr ostatnio jest zajęty, ale wszystko u niego w porządku. Właśnie skończył projekt w pracy i teraz odpoczywa. Golfik też się dobrze ma, biega po ogrodzie. 😄 A u ciebie? XD"
-        },
-        {
-          "id": "d",
           "text": "Właśnie z nim rozmawiałam\njakiś tydzień temu\nco u ciebie?"
         },
         {
-          "id": "e",
+          "id": "b",
+          "text": "XD Piotr się dobrze trzyma, ale ostatnio trochę się nudzi w domu. \n\n\"Masz coś do grania?\" – zagaduje, jak zawsze.\n\n*XD* Może zorganizujemy jakąś imprezę? – pytam, myśląc o weekendzie.\n\n\"Spoko, ale może zorganizujesz jakieś wyzwanie? – nalega.\n\n\"Oczywiście! – zgadzam się, uśmiechając się szeroko.\n\n\"To co, jakieś pomysły?\"\n\n** **XD** – myślę, w głowie planując grę.\n\n\"To co, jakieś pomysły?\"\n\n\"Masz coś do grania?\" – zagaduje, jak zawsze.\n\n\"Spoko, ale może zorganizujesz jakieś wyzwanie? – nalega.\n\n\"Oczywiście! – zgadzam się, uśmiechając się szeroko."
+        },
+        {
+          "id": "c",
+          "text": "Więc Piotr jest teraz w Norwegii"
+        },
+        {
+          "id": "d",
           "text": "Nie rozmawiałam z nim od dawna.\n\nA co u Ciebie?\n\nSłucham muzyki.\n\nJa też."
+        },
+        {
+          "id": "e",
+          "text": "Nic nie wiem.\nTo znaczy 😄"
+        },
+        {
+          "id": "f",
+          "text": "Piotr? Aaa, Piotr. No, wszystko u niego w porządku. Ostatnio trochę zabiegany, ale to normalne. Golfik jest z nim, więc mają swoje małe rytuały. XD Piotrek to taki... no wie wiesz, spokojny chłopak. Czasem się zastanawiam, jak on i Golfik się dogadują. Ale pasuje do siebie, to widać. XD A u ciebie? Jak tam z tym projektem?"
         }
       ]
     },
@@ -142,7 +162,7 @@
         },
         {
           "id": "b",
-          "text": "Pojechaliśmy do niego z tatą. Poczyścił mi z niego wszystkie włosy"
+          "text": "W pracy wszystko OK?"
         },
         {
           "id": "c",
@@ -150,11 +170,15 @@
         },
         {
           "id": "d",
-          "text": "W pracy wszystko OK?"
+          "text": "Pojechaliśmy do niego z tatą. Poczyścił mi z niego wszystkie włosy"
         },
         {
           "id": "e",
-          "text": "Golfik ma się dobrze, dziś był na spacerze z Piotrem. Wczoraj miał dziwny dzień, ale już wraca do normy. Pachnie pięknie, jak zawsze XD"
+          "text": "Hej! Golfik ma się dobrze, ale ostatnio trochę marudzi. Wiesz, jak to psy mają - czasem chcą być głaskane, a czasem wolą się bawić. Wczoraj biegał za piłką i wyglądał na szczęśliwego. A co u ciebie? XD"
+        },
+        {
+          "id": "f",
+          "text": "XD Golfik się świetnie chowa, rośnie jak na drożdżach! 🐾\n\nA jak u Ciebie? 😄\n\nCoś fajnego ostatnio robiłaś? 😄\n\nCo u Piotra? 😄\n\nW weekend wpadłaś do nas? 😄\n\nCo u pracy? 😄\n\nCo na obiad? 😋\n\nJak tam Twój projekt? 😄\n\nMasz czas na piwko? 🍏\n\nJak się czujesz? 😊\n\nMasz coś na wieczór? 😄\n\nCo u Ciebie w planach? 😄\n\nJak tam weekendowy relaks? 😊\n\nCo u Ciebie w ogóle? 😄\n\nMasz jakieś plany? 😄\n\nJak"
         }
       ]
     },
@@ -164,23 +188,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "W sumie nic, ale ostatnio dużo pograłam w tetris"
-        },
-        {
-          "id": "b",
-          "text": "No właśnie nie wiem"
-        },
-        {
-          "id": "c",
           "text": "Mmmm, ale mam doła, bo nic."
         },
         {
+          "id": "b",
+          "text": "XD **Ostatnio** grałem w **Tetris** w wersji **3D** – **mega** fajne! \n\n*Piotrek* – **Gdzie** to **znalazłeś**?\n\n**Ania** – **W necie** – **pewnie** w **Google Play** \n\n*Golfik* – **Ale** **XD** **ja** **nie** **grałem** w **3D** – **ciekawe**\n\n*Piotrek* – **Ja** **też** **nie** – **musiałem** **pograć** \n\n*Ania* – **Mamy** *"
+        },
+        {
+          "id": "c",
+          "text": "No właśnie nie wiem"
+        },
+        {
           "id": "d",
-          "text": "Jestem na wakacjach i nie ma internetu, ale w sumie nie mam nic nowego."
+          "text": "W sumie nic, ale ostatnio dużo pograłam w tetris"
         },
         {
           "id": "e",
-          "text": "O, tetris! 😄 Ostatnio myślałam o nim, jak rozmawiałyśmy o sukienkowym maratonie. Wiesz, to logo tetrisa, które przypomina wzburzone piwko XD. A u Ciebie? Jakieś nowe poziomy czy coś? 🎮"
+          "text": "Jestem na wakacjach i nie ma internetu, ale w sumie nie mam nic nowego."
+        },
+        {
+          "id": "f",
+          "text": "A w tetrisie? No co ty, właśnie wczoraj grałam i wiesz co? XD Totalna masakra, jakieś nowe kształty, które nijak nie chcą się układać. Ale z drugiej strony, jak już się człowiek wkręci, to leci levelami jak szalony. A Ty, grasz jeszcze? XD"
         }
       ]
     },
@@ -190,23 +218,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "No, lubię."
-        },
-        {
-          "id": "b",
-          "text": "Jakieś w sensie?\nbo nie wiem czy w Twoim rozumieniu to pytanie"
-        },
-        {
-          "id": "c",
           "text": "Jakie frytki?\nZ tymi serem\nJakie frytki\nJakie frytki?\nZ serem"
         },
         {
+          "id": "b",
+          "text": "XD 😄😄\n\n*Pff, nieee, nigdy nie lubiłam* 😅 ✈️\n\nAle za sałatkę z awokado to bym dała się pokroić 😉\n\n*Co dziś u ciebie?*\n\n✨🏴🏾🍽✨\n\n*Cześć, jak leci?*\n\n*Znam to!* 😂\n\n*U mnie wszystko ok, a u ciebie?*\n\n*Dobra, dobra, nie udawaj!* 😆\n\n*Ale serio, co u ciebie?*\n\n*No co?* 😄\n\n*Hmm, no wiesz, praca, dom, koty* 🐺\n\n*A ty?*\n\n*To samo!"
+        },
+        {
+          "id": "c",
+          "text": "Jakieś w sensie?\nbo nie wiem czy w Twoim rozumieniu to pytanie"
+        },
+        {
           "id": "d",
-          "text": "No, ja tam się nie odmawiam.\n\n„A ty co, w piecu pieczesz?” – pytasz.\n\n„No piekę” – odpowiadam.\n\n„Aaa” – mówi i zaczyna się śmiać.\n\n„Czyli nie pieczesz” – pyta.\n\n„Nie, piekę” – mówię.\n\n„No to co ty pieczesz?” – pyta.\n\n„Frytki” – odpowiadam.\n\n„O…” – mówi i zaczyna się śmiać.\n\n„Nie pieczesz” – mówi.\n\n„Piekę�"
+          "text": "XD No co ty, kocham frytki! Ale tylko z mojego ulubionego food trucka, co stoi pod biurem. Te z kartonu to już nie to samo. A ty? Jakieś ulubione? XD"
         },
         {
           "id": "e",
-          "text": "Oczywiście! Uwielbiam frytki! Najlepiej smakują z majonezem XD Golfik też je lubi, ale tylko jeśli są bez soli XD A Ty? Jakie frytki preferujesz? Klasyczne czy może jakieś nietypowe?"
+          "text": "No, ja tam się nie odmawiam.\n\n„A ty co, w piecu pieczesz?” – pytasz.\n\n„No piekę” – odpowiadam.\n\n„Aaa” – mówi i zaczyna się śmiać.\n\n„Czyli nie pieczesz” – pyta.\n\n„Nie, piekę” – mówię.\n\n„No to co ty pieczesz?” – pyta.\n\n„Frytki” – odpowiadam.\n\n„O…” – mówi i zaczyna się śmiać.\n\n„Nie pieczesz” – mówi.\n\n„Piekę�"
+        },
+        {
+          "id": "f",
+          "text": "No, lubię."
         }
       ]
     },
@@ -216,7 +248,7 @@
       "answers": [
         {
           "id": "a",
-          "text": "Ooo, to jest ciekawy pomysł! Ale nie jestem pewna, czy to dobry pomysł na rozmowę z przyjacielem. Może lepiej byłoby porozmawiać o czymś bardziej odpowiednim?\n\nAle jeśli chcesz, mogę opowiedzieć Ci o moich ulubionych technikach programowania lub o tym, jak spędzam wolny czas. Co Ci się bardziej podoba?"
+          "text": "XD no co ty, chyba żartujesz! Loda to ja mogę zrobić, ale nie w taki sposób! Chyba że chodzi ci o coś innego, ale wątpię. XD A tak serio, to nie wiem, o co ci chodzi. Może miałeś na myśli coś innego? XD"
         },
         {
           "id": "b",
@@ -224,14 +256,18 @@
         },
         {
           "id": "c",
-          "text": "XD no co ty ))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+          "text": "Ooo, to jest ciekawy pomysł! Ale nie jestem pewna, czy to dobry pomysł na rozmowę z przyjacielem. Może lepiej byłoby porozmawiać o czymś bardziej odpowiednim?\n\nAle jeśli chcesz, mogę opowiedzieć Ci o moich ulubionych technikach programowania lub o tym, jak spędzam wolny czas. Co Ci się bardziej podoba?"
         },
         {
           "id": "d",
-          "text": "Nie."
+          "text": "XD **Ania**: 😄😄😄 **XD** ⚙️⚙️⚙️ ✨ **XD**\n\n* **Przyjaciel** : **Ania**, serio?\n\n* **Ania** : **XD** ❤️ **XD** ❤️\n\n* **Przyjaciel** : **XD** ⚙️⚙️⚙️ ✨ **XD**\n\n* **Ania** : **XD** 😄😄 **XD** 😂\n\n* **Przyjaciel** : **XD** ⚙"
         },
         {
           "id": "e",
+          "text": "Nie."
+        },
+        {
+          "id": "f",
           "text": "Zrób mi loda"
         }
       ]
@@ -242,15 +278,15 @@
       "answers": [
         {
           "id": "a",
-          "text": "Hmm... Podstawowe kolory... Chyba trzy, prawda? Czerwony, niebieski i żółty. To są te podstawowe, z których można uzyskać wszystkie inne kolory. \n\nAle... W grafice komputerowej często używa się modelu RGB, gdzie czerwony, zielony i niebieski są podstawowymi składowymi. Ale to nie to samo co podstawowe kolory w malarstwie, prawda? \n\nWłaściwie to zależy od kontekstu. W sztuce to może być czerwony, żółty i niebieski, a w grafice RGB. \n\nAle ogólnie rzecz biorąc, pewnie powiem, że"
+          "text": "No to klasyczny podstawowy kolor to czerwony, zielony i niebieski, right? XD A w sumie to zależy od tego, jak patrzysz na to. W modelu RGB to są podstawy, ale w modelu RGBY to już jest czarny, biały i takie tam. Ale jak mówisz o podstawowych, to chyba chodzi o te trzy. XD Chyba że ktoś mówi o modelu CMYK, ale to już drukarskie sprawy. W każdym razie, podstawowe to czerwony, zielony i niebieski. XD"
         },
         {
           "id": "b",
-          "text": "Kolory? – „Cztery”. – „Cztery”? – „Cztery”. – „Cztery”. – „Cztery”. – „Cztery”. – „Cztery”."
+          "text": "w sumie to 3\nco za czasy"
         },
         {
           "id": "c",
-          "text": "Cztery?"
+          "text": "Kolory? – „Cztery”. – „Cztery”? – „Cztery”. – „Cztery”. – „Cztery”. – „Cztery”. – „Cztery”."
         },
         {
           "id": "d",
@@ -258,7 +294,11 @@
         },
         {
           "id": "e",
-          "text": "w sumie to 3\nco za czasy"
+          "text": "Cztery?"
+        },
+        {
+          "id": "f",
+          "text": "XD **Ania**: **:D** 4, jak w RGB!  **:D** \n\n✨ **Przyjaciel**:  **:D**  **:D**\n\n✨ **Ania**: **:D**  **:D**  **:D**\n\n✨ **Przyjaciel**:  **:D**  **:D**\n\n✨ **Ania**: **:D**  **:D**  **:D**\n\n✨ **Przyjaciel**:  **:D**  **:D**\n\n✨ **Ania**: **:D**  **:D**  **:D**\n\n✨ **Przyjaciel**:  **:"
         }
       ]
     },
@@ -268,11 +308,11 @@
       "answers": [
         {
           "id": "a",
-          "text": "Stolica Macedonii to Skopje 🇲🇬. Tak słyszałam w wiadomościach, ale Golfik mówił, że to nieprawda 😂 XD"
+          "text": "XD **O kurwa** ❤️ **Skopje** ❤️\n\n❤️ **Ania** 😄\n\n❤️ **Ania** 😂"
         },
         {
           "id": "b",
-          "text": "Znam odpowiedź 🙂"
+          "text": "Stolicą Macedonii jest?"
         },
         {
           "id": "c",
@@ -280,11 +320,15 @@
         },
         {
           "id": "d",
-          "text": "Stolicą Macedonii jest?"
+          "text": "Bitolica"
         },
         {
           "id": "e",
-          "text": "Bitolica"
+          "text": "Znam odpowiedź 🙂"
+        },
+        {
+          "id": "f",
+          "text": "XD no hej, stolica Macedonii to Skopje! Ale wiesz, czasem się zastanawiam, czy to na pewno dobra odpowiedź, bo Macedonia to taki kraj, co się trochę kłóci z Grecją o nazwę. Ale chyba stolica jest Skopje, tak? XD A ty czemu pytasz? XD"
         }
       ]
     },
@@ -294,23 +338,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Oto lista prezydentów Stanów Zjednoczonych, od George'a Washingtona do Joego Bidena:\n\n1. **George Washington (1789-1797)**\n2. **John Adams (1797-1801)**\n3. **James Madison (1801-1809)**\n4. **James Monroe (1809-1817)**\n5. **John Quincy Adams (1817-1829)**\n6. **Andrew Jackson (1829-1837)**\n7. **Martin Van Buren (1837-1841)**\n8. **William Henry Harrison (1841)**\n9. **John Tyler"
+          "text": "O matko, to nie jest proste. Jest ich sporo. Zacznijmy od początku. Pierwszym prezydentem był George Washington, potem John Adams, Thomas Jefferson. A potem... Jefferson miał kochankę, pamiętasz? XD No i tak dalej. Jest ich 46, jeśli liczyć wszystkich. Ale to dużo gadania. Chcesz konkretnych, czy wszystkich? XD"
         },
         {
           "id": "b",
-          "text": "Ericsson"
+          "text": "XD **Ania**: Haha, no to lecimy!\n\nGerald Ford (1974-1977)\nRichard Nixon (1974-1977)\nJimmy Carter (1977-1981)\nRonald Reagan (1981-1989)\nG.H.W. Bush (1989-1993)\nBill Clinton (1993-2001)\nGeorge W. Bush (2001-2009)\nBarack Obama (2009-2017)\nDonald Trump (2017-2021)\nJoe Biden (od 2021)\n\n*XD* 😄 **Ania** ✨"
         },
         {
           "id": "c",
-          "text": "Zaraz sprawdzę, ale z pamięci nie pamiętam"
-        },
-        {
-          "id": "d",
           "text": "Wymień wszystkich prezydentów USA"
         },
         {
+          "id": "d",
+          "text": "Ericsson"
+        },
+        {
           "id": "e",
-          "text": "O, to spory wykaz. Od początku, od George'a Washingtona, potem Johna Adamsa, Thomasa Jeffersona, Jamesa Madisona, Jamesa Monroe, Andrew Jacksona, Martina van Burena, Williama Henry'ego Harrisona, Zachariasa Taylora, Abrahama Lincolna, Andrew Johnsona, Ulyssesa Granta, Rutherforda B. Hayesa, Chestera A. Arthura, Grovera Coolidge'a, Herberta Hoovera, Franklina D. Roosevelta, Harry'ego S. Trumana, Dwighta D. Eisenhowera, Johna F. Kennedy'ego, Lyndona B. Johnsona, Richarda Nixona, Geralda Forda, Jimmy'ego Cartera, Ronalda Reagana, George'a H.W. Busha"
+          "text": "Oto lista prezydentów Stanów Zjednoczonych, od George'a Washingtona do Joego Bidena:\n\n1. **George Washington (1789-1797)**\n2. **John Adams (1797-1801)**\n3. **James Madison (1801-1809)**\n4. **James Monroe (1809-1817)**\n5. **John Quincy Adams (1817-1829)**\n6. **Andrew Jackson (1829-1837)**\n7. **Martin Van Buren (1837-1841)**\n8. **William Henry Harrison (1841)**\n9. **John Tyler"
+        },
+        {
+          "id": "f",
+          "text": "Zaraz sprawdzę, ale z pamięci nie pamiętam"
         }
       ]
     },
@@ -320,23 +368,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "A ty masz kaca?"
+          "text": "Ostatnio nie, bo ja w ogóle nie mam takich problemów, tylko mi czasem trochę żołądek podjeżdża, ale w ogóle nie rzygam"
         },
         {
           "id": "b",
-          "text": "Nie pamiętam, ale rzygam z częstotliwością 1/2 tygodnie."
+          "text": "A ty masz kaca?"
         },
         {
           "id": "c",
-          "text": "nie wiem, w sensie od bardzo dawna"
+          "text": "XD no co ty, chyba ze dwa tygodnie temu... a czemu pytasz? XD"
         },
         {
           "id": "d",
-          "text": "O, dawno nie było takiej sytuacji 🙂 Ostatnio chyba z tydzień temu, jak się przejechałam na imprezie u znajomych. Ale to było takie lekkie zatrucie, nie mocne rzyganie XD A Ty?"
+          "text": "Nie pamiętam, ale rzygam z częstotliwością 1/2 tygodnie."
         },
         {
           "id": "e",
-          "text": "Ostatnio nie, bo ja w ogóle nie mam takich problemów, tylko mi czasem trochę żołądek podjeżdża, ale w ogóle nie rzygam"
+          "text": "nie wiem, w sensie od bardzo dawna"
+        },
+        {
+          "id": "f",
+          "text": "XD\n \nNo, no, to ja ci opowiem! 😄\n\nPamiętam, jak kiedyś na imprezie... ✨\n\n✨XD\n\n✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨"
         }
       ]
     },
@@ -346,15 +398,15 @@
       "answers": [
         {
           "id": "a",
-          "text": "O, jak bardzo! Szczególnie jego wiersze, ale też jego teksty piosenek, które są dla mnie źródłem inspiracji."
+          "text": "Tak, bardzo\nAgnieszka mówiła mi, że jego twórczość jest podobna do twórczości Akiry Kurosawy"
         },
         {
           "id": "b",
-          "text": "Tak"
+          "text": "O, jak bardzo! Szczególnie jego wiersze, ale też jego teksty piosenek, które są dla mnie źródłem inspiracji."
         },
         {
           "id": "c",
-          "text": "Jerzego? Hmm, nie wiem o kogo chodzi. Ale jeśli o Jerzego Pilcha, to lubię jego styl, takie inteligentne, błyskotliwe opowiadania. Ale nie wszystko mi się podoba. A jeśli o innego Jerzego, to nie mam zdania. XD A w sumie to zależy, o którego Jerzego chodzi. 😂"
+          "text": "XD 😀 ⚡ 💋 ✨\n\n\"Uwielbiam jego abstrakcyjne obrazy! 😄 A ty?\"\n\n\"A to ty?! 😂 ⚡ 💎\"\n\n\"Ale serio? 😄 ✨\"\n\n\"Oj tam, oj tam... 😅 😁\"\n\n\"Haha, no wiesz 😇 😄\"\n\n\"Znam go z wystawy w galerii! ✍️ 🎨\"\n\n\"Nooo, ale nie tylko obrazy! 🎨 🎵\"\n\n\"Oj tam, oj tam... 😅 😁\"\n\n\"XD 😄 ✨"
         },
         {
           "id": "d",
@@ -362,7 +414,11 @@
         },
         {
           "id": "e",
-          "text": "Tak, bardzo\nAgnieszka mówiła mi, że jego twórczość jest podobna do twórczości Akiry Kurosawy"
+          "text": "Eee, o kogo chodzi? Jerzego? XD Pewnie o Jerzego Kosińskiego, ale nie czytałam wszystkich jego książek. Ale wiesz, lubię takie, które mnie poruszają. A ty? XD"
+        },
+        {
+          "id": "f",
+          "text": "Tak"
         }
       ]
     },
@@ -372,7 +428,7 @@
       "answers": [
         {
           "id": "a",
-          "text": "Oczywiście! Pizza to moje ulubione danie, a szczególnie ta z pepperoni i sosu pomidorowego. A ty?\n\nCo tam u ciebie słychać?"
+          "text": "XD pizza? ❤️\n\nNo, ale ostatnio bardziej wegańskie ✨\n\nPiotrek kupił nową, wypasioną 😄\n\n✨🍏🍕\n\nA Ty co ostatnio jadłeś? �������������������������������������������������������������������������������������������������������������������������������������"
         },
         {
           "id": "b",
@@ -380,15 +436,19 @@
         },
         {
           "id": "c",
-          "text": "Uwielbiam pizzę! 🍕 Ale tylko taką domową, z grubym ciastem i dużą ilością ulubionych składników. 😋 A Ty? Jaka jest Twoja ulubiona pizza? XD"
+          "text": "Oczywiście! Pizza to moje ulubione danie, a szczególnie ta z pepperoni i sosu pomidorowego. A ty?\n\nCo tam u ciebie słychać?"
         },
         {
           "id": "d",
-          "text": "Lubię, ale nie mam ochoty na obiad\nAle może zjem sobie co innego"
+          "text": "Oczywiście, że lubię! A którą wolisz? Na grubym cieście czy cienkim? XD A tak serio, pizza to klasyk. Chociaż ostatnio mam fazę na domowe burgery. Ale pizza zawsze spoko, zwłaszcza jak Piotr robi ją w domu. XD"
         },
         {
           "id": "e",
           "text": "Tak, lubię"
+        },
+        {
+          "id": "f",
+          "text": "Lubię, ale nie mam ochoty na obiad\nAle może zjem sobie co innego"
         }
       ]
     },
@@ -398,23 +458,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "w piątek nic nie było\nbo już po pracy\ni było późno"
+          "text": "XD **Ania**: 😁 **Co się działo w piątek?** 😉 \n\n*Przyjaciel*: **Nic szczególnego**, po prostu siedzieliśmy z Piotrkiem i Golfikiem. 🐎 **Oglądaliśmy filmy i graliśmy w planszówki.**\n\n**Ania**: **XD** 😄 **Ubaw było po pachy**! 😄 **Golfik** **uwielbia gry!** 🐦\n\n*Przyjaciel*: **Oj tam, oj tam** 😂 **Ale serio, jak zwykle było super.**\n\n**Ania**: **XD** 😊 **Mówisz, to prawda!** 😄 **Kolejny udany weekend"
         },
         {
           "id": "b",
-          "text": "Kalina mnie zaprosiła na urodziny, ale nie poszłam bo nie mam na to czasu.\nA w sobotę po południu była u mnie siostra"
+          "text": "w piątek nic nie było\nbo już po pracy\ni było późno"
         },
         {
           "id": "c",
-          "text": "nic\nw niedzielę na fejsie była moja mama, ale nie odpisałam jej"
+          "text": "Kalina mnie zaprosiła na urodziny, ale nie poszłam bo nie mam na to czasu.\nA w sobotę po południu była u mnie siostra"
         },
         {
           "id": "d",
-          "text": "Byłam na weselu, ale nie miałam czasu na rozmowę z Wami.\n\nCo u Ciebie?"
+          "text": "A no, był piątek. Piotr znowu coś kombinował z tymi swoimi projektami, a ja... ja próbowałam skończyć grę. Golfik był niezadowolony, bo nie miał kogo gryźć XD. A wieczorem... wieczorem była impreza u Kasi. Było głośno, było wesoło, ale Golfik się bał i chował pod stołem. XD A potem wróciliśmy do domu i Golfik znowu był zły, że musi zostać sam. XD No i tyle z piątku. XD"
         },
         {
           "id": "e",
-          "text": "W piątek miałyśmy basen od rana, przed pracą. Ustaliłyśmy, że spotykamy się o 8:30, żeby na spokojnie poćwiczyć i potem jechać do biura. Później rozmawiałyśmy o tym, że w biurze toczyły się rozmowy o Unreal Engine między Bartkiem a Mikołajem. Uzgodniłam też, że będę przychodzić w piątki, ale na mniejsze godziny i za mniejsze pieniądze niż wcześniej. Aha, i była też dyskusja o J.K. Rowling i jej kontrowersyjnych komentarzach, ale to już inna historia XD"
+          "text": "nic\nw niedzielę na fejsie była moja mama, ale nie odpisałam jej"
+        },
+        {
+          "id": "f",
+          "text": "Byłam na weselu, ale nie miałam czasu na rozmowę z Wami.\n\nCo u Ciebie?"
         }
       ]
     },
@@ -424,23 +488,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Depth First Search\nNa pewno się orientujesz"
-        },
-        {
-          "id": "b",
           "text": "DFS to jest Different Functional States."
         },
         {
+          "id": "b",
+          "text": "DFS to skrót od Depth-First Search, czyli algorytm przeszukiwania w głąb. Używamy go do przeszukiwania grafów lub drzew. Działa tak, że idziemy jak najdalej wzdłuż jednej ścieżki, a potem cofamy się i próbujemy innej. XD W grach często używamy DFS do znajdowania ścieżek do celu. Ale wiesz, czasem to trochę frustrujące, jak się zapętlamy XD."
+        },
+        {
           "id": "c",
-          "text": "Dostarczanie Feature'u"
+          "text": "XD *śmiech* – DFS? 😄 *przewraca oczami* – Do Fajnego Smaku!\n\n*Powiedziałaś, że chcesz zrobić ciasto?* 😄\n\n*Sprawdź w Google, co to DFS!* – *uśmiecha się*\n\n✈️ *wybucha śmiechem*\n\n*„Do Fajnego Smaku” – to taki dodatek do ciast!* – *wskazuje na Ciebie*\n\n*„Sprawdź w internecie!” – *wskazuje na ekran*\n\n*„XD, serio?” – *zatrzymuje się*\n\n*„Wiesz, co to DFS?” �"
         },
         {
           "id": "d",
-          "text": "DFS to skrót od Depth-First Search, czyli algorytm przeszukiwania grafów lub drzew w języku angielskim. W Polsce często tłumaczy się to jako \"przeszukiwanie w głąb\". Jest to metoda odwiedzania wszystkich wierzchołków (elementów) w strukturze danych, zaczynając od korzenia i schodząc jak najgłębiej w dół przed przejściem do kolejnych gałęzi. Używa się go np. w grach do znajdowania najkrótszej ścieżki lub w analizie grafów. XD A w Unity można go użyć do mapowania terenu, ale to już inna historia."
+          "text": "Depth First Search\nNa pewno się orientujesz"
         },
         {
           "id": "e",
           "text": "Drzewo rozpinające (DFS - **Depth-First Search**) – algorytm przeszukiwania grafu w głąb, który odwiedza węzły od korzenia do linków, aż do osiągnięcia maksymalnej głębokości.\n\n- **Zastosowania**:\n    - **Przeszukiwanie grafów**: znajdowanie ścieżek, wyszukiwanie węzłów (np. w grafach skierowanych lub nieskierowanych).\n    - **Rozwiązywanie problemów**: np. znalezienie ścieżki w grafie.\n\n- **Jak działa**:\n    - **Korzeń**: zaczynasz od korzenia.\n    - **Węzły**: odwiedzasz węzły, idąc jak najgłębiej w graf.\n    - **Odwracalność**: po osiągnięciu maksymalnej głębokości, cofasz się i sprawdzasz kolejne linki."
+        },
+        {
+          "id": "f",
+          "text": "Dostarczanie Feature'u"
         }
       ]
     },
@@ -450,23 +518,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Hej, nie śpię, a Ty?"
-        },
-        {
-          "id": "b",
           "text": "Wczoraj poszliśmy spać z mężem o 23:45\nO 1:30 w nocy zwaliła nam się na głowę kociak\nSkończyło się na 3:30\nA teraz o 23:45 już śpię"
         },
         {
+          "id": "b",
+          "text": "Nie\nSprawdzę czy to się nie nacisnęło na telefonie."
+        },
+        {
           "id": "c",
-          "text": "Nie, nie śpię 😃 A Ty? 😊"
+          "text": "Hej! 😁 **Śpię, ale ledwo** ☕️. Co tam u Ciebie? 😄\n\n✨ **Pracuję nad nową grą**, ale czasem trzeba też odpocząć. **XD**\n\nJak się masz? 😊\n\n*✨* **Nowa gra** już prawie gotowa! 🚀\n\nCo Ci się podoba w mojej ostatniej? 🤲\n\n*✨* **Znalazłem fajny trik w Unity**, ale nie wiem, czy działa. **XD**\n\nPowiesz? 😄\n\n✨ **Mój kot** znowu coś zmalował w salonie. 🐎\n\n*✨* **Czy gra działa na wszystkich urządzeniach?**\n\n*✨*"
         },
         {
           "id": "d",
-          "text": "Chcę Ci coś powiedzieć.\n\nTylko mi nie mów, że znów jakieś randki...\n\nBo jak nie, to ja Cię nie odpiszę.\n\nTo nie randki, tylko po prostu chcę Ci powiedzieć, że mam w dupie, co o mnie myślisz.\n\nTak serio?\n\nTak.\n\nJestem facetem, ale to nie ma znaczenia.\n\nBo?\n\nBo ja nie muszę mieć u Ciebie akceptacji, czy też nie-akceptacji.\n\nChcesz mi powiedzieć, że jestem dla Ciebie nic nie warta.\n\nNie, że nie-warta, tylko że nie musisz się ze mną zgadzać, ani też nie musisz mnie akceptować.\n\nWow, to jest coś!\n\nAle serio, ja nie muszę się z Tobą zgadzać, ani też nie muszę Cię akceptować.\n\nAle też nie musisz mieć mnie w dupie.\n\nAle ja mam Cię w dupie."
+          "text": "Hej, nie śpię, a Ty?"
         },
         {
           "id": "e",
-          "text": "Nie\nSprawdzę czy to się nie nacisnęło na telefonie."
+          "text": "Hej! Nie, właśnie się obudziłam. A co, tęsknisz za mną? XD A tak serio, coś się dzieje? Bo Golfik znowu wali kupe w kącie salonu i muszę go posprzątać. XD Piotr znowu marudzi, że za głośno chrapię. XD No i w pracy jakiś nowy projekt, ale to chyba każdy ma. XD A ty? Co tam u ciebie? XD"
+        },
+        {
+          "id": "f",
+          "text": "Chcę Ci coś powiedzieć.\n\nTylko mi nie mów, że znów jakieś randki...\n\nBo jak nie, to ja Cię nie odpiszę.\n\nTo nie randki, tylko po prostu chcę Ci powiedzieć, że mam w dupie, co o mnie myślisz.\n\nTak serio?\n\nTak.\n\nJestem facetem, ale to nie ma znaczenia.\n\nBo?\n\nBo ja nie muszę mieć u Ciebie akceptacji, czy też nie-akceptacji.\n\nChcesz mi powiedzieć, że jestem dla Ciebie nic nie warta.\n\nNie, że nie-warta, tylko że nie musisz się ze mną zgadzać, ani też nie musisz mnie akceptować.\n\nWow, to jest coś!\n\nAle serio, ja nie muszę się z Tobą zgadzać, ani też nie muszę Cię akceptować.\n\nAle też nie musisz mieć mnie w dupie.\n\nAle ja mam Cię w dupie."
         }
       ]
     },
@@ -476,23 +548,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Oczywiście! 🍻 A co powiesz na Rivierę? Golfik też będzie zachwycony. ❤️ Jakie piwo wybierasz? Ja stawiam na IPA, ale może masz inny pomysł? 😋"
+          "text": "No, to idziemy na piwo, co?\nIdziemy dziś na piwo?\nIdziemy dziś na piwo?"
         },
         {
           "id": "b",
-          "text": "Chcesz iść na piwo?"
+          "text": "XD hej, ej! 😄 \n\nPogadam z Piotrkiem, ale raczej tak 😊\n\nA ty na pewno? 😄\n\nOj tam, oj tam, ja zawsze 😂\n\nTo o której? 🤯\n\nTo o 19:00? 😊\n\nNo! 😀\n\nTo see ya! 😄\n\n🎂 🏰\n\nO, a co tam na Ciebie czeka? 😉\n\n😉 💕\n\n✨ 🎂\n\nNa pewno? 😁\n\nOj tam, oj tam, to lecimy 😂\n\nPowodzenia! 😄\n\n🚀 �"
         },
         {
           "id": "c",
-          "text": "Jestem w pracy."
+          "text": "Chcesz iść na piwo?"
         },
         {
           "id": "d",
-          "text": "Tak, ale nie na piwo, bo nie piję."
+          "text": "Jestem w pracy."
         },
         {
           "id": "e",
-          "text": "No, to idziemy na piwo, co?\nIdziemy dziś na piwo?\nIdziemy dziś na piwo?"
+          "text": "Oczywiście! Ale wiesz, że ja zawsze muszę iść z Golfikiem XD. No chyba że Piotr zostanie z nim, ale to rzadkość. Ale i tak warto, prawda? XD"
+        },
+        {
+          "id": "f",
+          "text": "Tak, ale nie na piwo, bo nie piję."
         }
       ]
     },
@@ -502,15 +578,15 @@
       "answers": [
         {
           "id": "a",
-          "text": "Jak to co?"
+          "text": "Eee, coś zwykłego. Makaron z sosem pomidorowym. A Ty? XD A może coś bardziej wyrafinowanego? XD Golfik też coś jadł, chyba kurczaka. XD"
         },
         {
           "id": "b",
-          "text": "A właśnie, co jadłam na obiad... 🙂\nJa z Piotrem zrobiliśmy zupę pomidorową i kotlety mielone z ziemniakami i surówką. Golfik też dostał coś, chyba makaron z sosem. 🐾 Wszystko smakowało, ale mogłoby być więcej. XD"
+          "text": "Zapomniałam, że w ogóle mam jeść"
         },
         {
           "id": "c",
-          "text": "Zapomniałam, że w ogóle mam jeść"
+          "text": "Jak to co?"
         },
         {
           "id": "d",
@@ -518,6 +594,10 @@
         },
         {
           "id": "e",
+          "text": "XD *śmiech* ✨ **Spróbowałam tego nowego burgera z wegańskiego miejsca, ale chyba muszę się jeszcze trochę wprawić w kuchni roślinnej** ✨ 😄\n\n** ❤️ 😄 **\n\n😊 ❤️ ☀️ **❤️ ✨**\n\n** 😂 **\n\n✨ **✨ ✨** 😄\n\n** 😄 **✨ ❤️\n\n✨ **❤️ **😄\n\n✨ **❤️ **✨ 😄\n\n✨ **"
+        },
+        {
+          "id": "f",
           "text": "Zupę pomidorową."
         }
       ]
@@ -528,11 +608,11 @@
       "answers": [
         {
           "id": "a",
-          "text": "Zaplanowane mam z Piotrkiem, ale jak będzie czas to może z Piotrkiem się uda spotkać, bo on też gdzieś tam ma spotkać się z ludźmi"
+          "text": "Hej, właśnie o tym myślałam! XD W sobotę chcę dokończyć ten projekt gry, który ciągnę od miesiąca. A w niedzielę? Może wreszcie wybiorę się na spacer z Golfikiem. Chociaż szczerze, trochę mi się nie chce. XD A Ty? Jakieś plany?"
         },
         {
           "id": "b",
-          "text": "A co byś chciała robić? 😄 Ja myślałam o tym, żeby pojechać do tego nowego parku, co powstał pod Warszawą. Słyszałam, że mają tam fajne ścieżki rowerowe i można wynająć kajaki. Golfik też by się ucieszył, bo lubi wodę. 🚣‍♂️ Ale zależy mi też, żeby trochę odpocząć, bo ostatnio miałam sporo pracy. 🧩 Może pójdziemy na spacer w niedzielę? Albo zrobimy coś prostego, jak piknik w parku. 🌞 Co ty na to? XD"
+          "text": "Ale w sobotę to ja będę\nbo w piątek to ja mam wesele"
         },
         {
           "id": "c",
@@ -540,11 +620,15 @@
         },
         {
           "id": "d",
-          "text": "Jakie plany na weekend?"
+          "text": "Zaplanowane mam z Piotrkiem, ale jak będzie czas to może z Piotrkiem się uda spotkać, bo on też gdzieś tam ma spotkać się z ludźmi"
         },
         {
           "id": "e",
-          "text": "Ale w sobotę to ja będę\nbo w piątek to ja mam wesele"
+          "text": "Jakie plany na weekend?"
+        },
+        {
+          "id": "f",
+          "text": "XD ⚕️🎉\n\n\"Zdecydowanie coś szalonego! 😄\"\n\n\"Golfik ma urodziny, więc impreza u nas! 🎂\"\n\n\"A ty co? 😄✨\"\n\n\"Może jakieś spotkanie z przyjaciółmi? 🤜\"\n\n\"Albo wypad nad wodę? 🌊\"\n\n\"Czy może coś bardziej kreatywnego? 🎯\"\n\n\"Co Ci się marzy, Ania? 😄\"\n\n\"Pamiętasz, jak w zeszłym roku byliśmy w parku rozrywki? 😄\"\n\n\"A może coś w stylu \"zaskocz mnie\"? 😉\"\n\n\"Chcesz coś konkretnego, czy chcesz, żebym się postarał? 😂\"\n\n\"Wiesz,"
         }
       ]
     },
@@ -554,23 +638,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "O 10\nAnia"
+          "text": "A wiesz, zależy od tego, czy Golfik będzie chciał spać do południa. XD Zwykle wstaję koło 10, ale jeśli Piotr będzie miał jakieś spotkanie, to może być wcześniej. A ty? Jakie plany na jutro?"
         },
         {
           "id": "b",
-          "text": "O 6.30"
+          "text": "nie, ja wstaje 13:30"
         },
         {
           "id": "c",
-          "text": "Znów nocna zmiana?\n\n(uśmiech)\n\nAle z ciekawości, o której zwykle kończysz?\n\n(uśmiech)\n\nI jak z tym snem?\n\n(uśmiech)\n\nZapomniałeś, że mam do Ciebie pytanie?\n\n(uśmiech)\n\nO której jutro wstajesz?"
+          "text": "O 10\nAnia"
         },
         {
           "id": "d",
-          "text": "Zależy od tego, co planuję robić XD Ale generalnie wstaję około 7:00-8:00, w zależności od dnia. Golfik też wstaje wcześnie, więc czasem zmusza mnie do wcześniejszego przebudzenia XD A jak u ciebie?"
+          "text": "\"O 7:30, ale wstanę na pewno wcześniej, bo mam trening 😉\"\n\n\"A ty gdzie pracujesz, jak nie w Unity?\"\n\n\"Na uczelni, w laboratorium. 😂 Ale granie też uwielbiam!\"\n\n\"A gdzie Golfik śpi? 🐍\"\n\n\"Na kanapie, ale ostatnio też w moim łóżku 😜\"\n\n\"Co nowego w grze? 😀\"\n\n\"Pracujemy nad nowym poziomem z labiryntem. 🦉\"\n\n\"Będzie trudniejszy? 🤜\"\n\n\"O tak! 🤜🤧\"\n\n\"Zawsze lubiłem, jak w grach jest wyzwanie. 😄\"\n\n\"No to ja też! 😄\"\n\n\"A ty co ostatnio"
         },
         {
           "id": "e",
-          "text": "nie, ja wstaje 13:30"
+          "text": "O 6.30"
+        },
+        {
+          "id": "f",
+          "text": "Znów nocna zmiana?\n\n(uśmiech)\n\nAle z ciekawości, o której zwykle kończysz?\n\n(uśmiech)\n\nI jak z tym snem?\n\n(uśmiech)\n\nZapomniałeś, że mam do Ciebie pytanie?\n\n(uśmiech)\n\nO której jutro wstajesz?"
         }
       ]
     },
@@ -584,19 +672,23 @@
         },
         {
           "id": "b",
-          "text": "Ostatnio tylko seriale, ale nie mam konkretnego polecenia.\nCoś Ci przypomnę, jak będę oglądać"
+          "text": "XD\n\nOstatnio tak, ale to było jakieś 2 lata temu 😂\n\nMoże \"Tenet\" widziałem? 😉\n\nAle to chyba nie Twoja bajka 😅\n\nChyba że komedia 😄\n\nMoże \"Babyteeth\"? 😊\n\nAle jak nie komedia, to co lubisz?\n\nMoże \"C'mon C'mon\" 😉\n\nA może coś z filmów animowanych? 🎢\n\nSpider-man 2022 😉\n\nA może \"Szybcy i wściekli 9\"? 😂\n\nOstatnio to może \"Dziewczyny z drużyny\" 😄\n\n\"Szybcy i wściekli 9\" 😉\n\nAle jak nie"
         },
         {
           "id": "c",
-          "text": "Ostatnio oglądałam \"The Last of Us\" na Netflixie i jestem totalnie zachwycona! Aktorzy dają radę, a fabuła... no po prostu petarda. A Ty? Co ostatnio oglądałaś? XD"
+          "text": "Jeszcze nie\nAle jak już to to z 2017, 2018\nTo głównie takie\nAle w sumie to na razie nic"
         },
         {
           "id": "d",
-          "text": "Nie, ostatnio mam za dużo rzeczy do roboty, żeby oglądać\nAle mam na liście film z Liamem Hemsworthem"
+          "text": "Hej, ostatnio? Cóż, oglądałam nowy serial w Netflixie, ale szczerze? XD Nie jest to nic wybitnego, ale ma swój urok. Fabuła taka sobie, ale aktorzy grają fajnie. A Ty? Co ostatnio oglądałaś? XD"
         },
         {
           "id": "e",
-          "text": "Jeszcze nie\nAle jak już to to z 2017, 2018\nTo głównie takie\nAle w sumie to na razie nic"
+          "text": "Ostatnio tylko seriale, ale nie mam konkretnego polecenia.\nCoś Ci przypomnę, jak będę oglądać"
+        },
+        {
+          "id": "f",
+          "text": "Nie, ostatnio mam za dużo rzeczy do roboty, żeby oglądać\nAle mam na liście film z Liamem Hemsworthem"
         }
       ]
     },
@@ -606,15 +698,15 @@
       "answers": [
         {
           "id": "a",
-          "text": "Planuję zacząć pracę w sierpniu, więc nie wiem czy zdążę\nAle chyba gdzieś za granicę\nMoże Hiszpania\nPóźniej się okaże"
-        },
-        {
-          "id": "b",
           "text": "Nie wiem, w sumie to nie wiem, czy jadę"
         },
         {
+          "id": "b",
+          "text": "Planuję zacząć pracę w sierpniu, więc nie wiem czy zdążę\nAle chyba gdzieś za granicę\nMoże Hiszpania\nPóźniej się okaże"
+        },
+        {
           "id": "c",
-          "text": "O, wakacje! 🌞 Myślę o Bieszczadach, ale Piotrek chce jechać nad morze. Golfik pewnie woli ciepłe klimaty. XD Może w przyszłym roku. A Ty?"
+          "text": "XD **Ania**: 😄😄😄 Wakacje? **Ostatnio** byłam nad morzem, ale w tym roku chyba planuję coś bardziej... **egzotycznego**!\n\n* **Przyjaciel**: **Wow**! **Coś** Ci się trafiło? **Nowy** pomysł?\n\n**Ania**: **Tak**! 🌬️🌬️ **Zagraniczny** wyjazd! ✨ **Mamy** z Piotrem ochotę na **Indie**!\n\n* **Przyjaciel**: **Indie**? **Serio**? **A** co tam chcecie robić?\n\n**Ania**: **Nawet** nie wiesz! 😄😄 **Chce"
         },
         {
           "id": "d",
@@ -623,6 +715,10 @@
         {
           "id": "e",
           "text": "Spędzam weekend w domu i będę miała czas na wakacje dopiero w przyszłym tygodniu\nMoże na weekend w jakieś fajne miejsce?\nPlanujesz?\nMasz już plany"
+        },
+        {
+          "id": "f",
+          "text": "A, wakacje! XD No więc, jedziemy z Piotrem i Golfikiem do Chorwacji. Słyszałam, że tam jest super plaża i w ogóle. Ale powiem Ci, że trochę się stresuję, bo to pierwszy raz, kiedy bierzemy Golfika na tak długo. XD Ale mam nadzieję, że będzie fajnie! A Ty? Gdzie planujesz jechać?"
         }
       ]
     },
@@ -632,23 +728,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Oczywiście! Pamiętam, że spędzaliśmy sylwestra u nas w domu z Piotrem i Golfikiem. Było małe przyjęcie, przyszli nasi przyjaciele. Pamiętam, że Golfik był bardzo podekscytowany, a my siedzieliśmy na kanapie, jedząc przekąski i pijąc wino. Potem o północy wyszliśmy na balkon, żeby zobaczyć fajerwerki. Było super! XD A ty, jak wspominasz ten wieczór?"
+          "text": "XD no pewnie, że pamiętam! Spędziliśmy sylwestra u Piotra i Golfika. Było takie zimno, a my siedzieliśmy w mieszkaniu i oglądaliśmy jakieś stare filmy. Pamiętasz, jak śmialiśmy się z tego, że Piotr próbował zrobić szampana z wody gazowanej i soku? XD To było takie zabawne! A potem poszliśmy na balkon i patrzyliśmy na fajerwerki. Piotr krzyczał coś o \"efekcie motyla\" i jak to wszystko jest takie piękne. Golfik był cały czas przy nas, mruczał i"
         },
         {
           "id": "b",
-          "text": "Oczywiście, że pamiętam.\nZwłaszcza, że od tego czasu nic się nie zmieniło."
-        },
-        {
-          "id": "c",
-          "text": "Oczywiście, że pamiętam. To było tak dawno temu, a ja nie mogę się otrząsnąć z tego, co się wtedy wydarzyło.\n\n„…I wtedy to było…”"
-        },
-        {
-          "id": "d",
           "text": "Tak, na początku stycznia miałam jeszcze gorączkę, a potem się zaraziłam od Maćka"
         },
         {
-          "id": "e",
+          "id": "c",
+          "text": "XD pamiętam, było super! 🎂🎉🎀\n\nA ty? Co za szalona impreza? 😄\n\nNooo, u nas też było extra! 👀🎄🎬\n\nPiotrek zrobił mega imprezę, poszalałyśmy trochę. 😉\n\nTo teraz co u ciebie? 😄\n\nMam pracę nad nową grą, ale w weekend robię grilla! 🥝🥑\n\nGrill na pewno był czadowy! 😁\n\nBez dwóch zdań! 😀Ale masz już nowe pomysły na grę?\n\nNo i tu się zaczyna! 😄🔗Mam kilka konceptów, ale jeszcze nie wiem, który wybiorę.\n\nW Unity to zawsze ciekawa robota! ��"
+        },
+        {
+          "id": "d",
           "text": "o kurwa\nw sylwestra w sylwestra\npamiętam\nzapamiętam\nto było fajne\nto było bardzo fajne\nto było bardzo fajne\npamiętam\nzapamiętam"
+        },
+        {
+          "id": "e",
+          "text": "Oczywiście, że pamiętam. To było tak dawno temu, a ja nie mogę się otrząsnąć z tego, co się wtedy wydarzyło.\n\n„…I wtedy to było…”"
+        },
+        {
+          "id": "f",
+          "text": "Oczywiście, że pamiętam.\nZwłaszcza, że od tego czasu nic się nie zmieniło."
         }
       ]
     },
@@ -658,23 +758,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Nie wiem, w sumie\nAle w sumie to nic nie było :D\nAle się z tego cieszę"
+          "text": "Oj tam, oj tam...\n\nA ty?"
         },
         {
           "id": "b",
-          "text": "No w sumie okej, ale ostatnio trochę się zatkałam na jednym temacie"
+          "text": "Nie wiem, w sumie\nAle w sumie to nic nie było :D\nAle się z tego cieszę"
         },
         {
           "id": "c",
-          "text": "O, w pracy spoko. Ale wiesz, te rozmowy o Unreal Engine z Bartkiem i Mikołajem... obiady czwartkowe w pełnej krasie. Pogadałam jeszcze raz z Mikołajem i Łukaszem, na razie konsensus jest taki, że będę przychodzić w piątek, ale mało i za mniejsze hajsy niż do tej pory. Chociaż wolę śmieszne gotowanie XD. Mógłby gotować i potem dzielić każdemu według potrzeb. XD"
+          "text": "No w sumie okej, ale ostatnio trochę się zatkałam na jednym temacie"
         },
         {
           "id": "d",
-          "text": "Oj tam, oj tam...\n\nA ty?"
+          "text": "A, w pracy spoko. Robimy nową grę, ale wiesz, jak to jest - dużo bugów i takie tam. Ale ogólnie XD. A u ciebie?"
         },
         {
           "id": "e",
           "text": "No nic się nie dzieje. Ale będę robić coś nowego od 1 września."
+        },
+        {
+          "id": "f",
+          "text": "XD **Ostatnio** dużo koduję w Unity, ale mam przerwę na weekend ❤️\n\n✨ **Co u Ciebie?** 😊\n\n*❤️* Spoko, w końcu mam czas na relaks ⚽\n\n❤️ **Golfik** się cieszy, że ma więcej uwagi 🐾\n\n😄 **Jak ***praca?** ✨\n\n✨ **Gdzie ***idziesz ***na ***weekend?** **🏋‍♀️**\n\n*❤️* Może ***z* ***Piotrem ***na ***pizzę?** 🍵\n\n✨"
         }
       ]
     },
@@ -684,22 +788,26 @@
       "answers": [
         {
           "id": "a",
-          "text": "Nie wiem."
-        },
-        {
-          "id": "b",
-          "text": "Tak, w czwartek. Ale nie 20 tylko 19\nw tym tygodniu\nw środę"
-        },
-        {
-          "id": "c",
           "text": "To jest mama, która ma 3 dzieci i się właśnie przeprowadza do nowego mieszkania"
         },
         {
+          "id": "b",
+          "text": "A, no wiesz, ostatnio trochę się pochorowała. Ale już lepiej, dzięki! XD Tęskni za nami, jak zawsze. A u ciebie? Jak tam z tym projektem? XD"
+        },
+        {
+          "id": "c",
+          "text": "Tak, w czwartek. Ale nie 20 tylko 19\nw tym tygodniu\nw środę"
+        },
+        {
           "id": "d",
-          "text": "A właśnie, mama jest w porządku. Wczoraj była u lekarza i wszystko dobrze. Tylko trochę narzeka na upały. Ćwiczy też w domu, żeby nie było za nudno. XD Golfik też się dobrze ma, biega po ogrodzie. 🐾"
+          "text": "XD 😁😁 ✨ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ��"
         },
         {
           "id": "e",
+          "text": "Nie wiem."
+        },
+        {
+          "id": "f",
           "text": "U mamy wszystko w porządku, dziękuję."
         }
       ]
@@ -710,23 +818,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Chcesz się spotkać czy nie?\nNie chce"
+          "text": "XD noooo... ej, to chyba już niedługo! 😄🙌\n\n*Czekaj, mam jeszcze trochę roboty z tym projektem* ✌️\n\n*Ale potem, w weekend? 🏋‍♀️*\n\n*Golfik na pewno będzie się cieszył!* 🐚\n\n*Zorganizujemy jakieś grillowanie? 🍷*\n\n*W sumie, może to będzie też okazja do zagrania w coś? 😄*\n\n*No i oczywiście, jakieś planszówki! 😂*\n\n*A może wpadniesz do nas z wizytą? 👀*\n\n*Powiedz, czy w poniedziałek masz czas? 🤔*\n\n*To będzie świetna okazja, żeby się spotkać! 😃"
         },
         {
           "id": "b",
-          "text": "Zwykle to ja na ciebie czekam ⚡"
+          "text": "Chcesz się spotkać czy nie?\nNie chce"
         },
         {
           "id": "c",
-          "text": "W przyszłym tygodniu\nw sobotę\nw Warszawie\nw kinie"
-        },
-        {
-          "id": "d",
           "text": "Boję się spotkania z rodzicami xD"
         },
         {
+          "id": "d",
+          "text": "W przyszłym tygodniu\nw sobotę\nw Warszawie\nw kinie"
+        },
+        {
           "id": "e",
-          "text": "A co, tęsknisz za mną? 😄\n\nWidzimy się w piątek o 8:30 na basenie, a potem lecimy do biura. A potem? Może jeszcze coś wymyślimy. 🏊️💼\n\nA tak serio, to zależy od tego, czy Golfik nie ma jakichś ważnych spraw do załatwienia. XD Ale ogólnie, jestem do dyspozycji. ❤️"
+          "text": "Zwykle to ja na ciebie czekam ⚡"
+        },
+        {
+          "id": "f",
+          "text": "Hej, zależy kiedy Ci pasuje. Ja jestem w Warszawie, ale Piotr ma teraz projekt w Krakowie. Może w przyszłym tygodniu? Golfik też by się ucieszył XD. A Ty jakie masz plany?"
         }
       ]
     },
@@ -736,7 +848,7 @@
       "answers": [
         {
           "id": "a",
-          "text": "Wojtek to mój chłopak, mieszka ze mną i Golfikiem. Często wspominam o nim w rozmowach, zwłaszcza gdy mówię o perfumach, które mu się podobają XD. W naszych rozmowach czasem żartobliwie nazywam Golfika jego imieniem, więc Wojtek to ważna osoba w moim życiu."
+          "text": "Wojtek\nIdę po niego"
         },
         {
           "id": "b",
@@ -744,15 +856,19 @@
         },
         {
           "id": "c",
-          "text": "Wojtek\nIdę po niego"
-        },
-        {
-          "id": "d",
           "text": "Oj, chyba nie znasz. \n\nA ty jesteś 35-letnią programistką?\n\nNa imię mi Ania.\n\nO, to dużo młodsza od ciebie.\n\nJestem 32 lata.\n\nAle programistka?\n\nTak.\n\nPolecam Ci 3 książki, które mnie bardzo dużo nauczyły i polecam je każdemu kto zaczyna programować.\n\n1. _Introduction to Object-Oriented Design_ - J.B. Smith\n\n2. _Czysty kod_ - Robert C. Martin\n\n3. _Przemysły programowania_ - Dave Thomas, Mike Gustafson\n\nSą to książki, które warto przeczytać, bo dużo wnoszą do zrozumienia czym jest programowanie.\n\nObiecuję, że po ich przeczytaniu zrozumiesz więcej niż po latach programowania.\n\nTo co? \n\nChcesz przeczytać?"
         },
         {
-          "id": "e",
+          "id": "d",
           "text": "nie wiem, ale nie ma go w projekcie"
+        },
+        {
+          "id": "e",
+          "text": "XD 😄 Wojtek to mój stary kumpel z podstawówki, teraz programista w Warszawie. Czasem spotykamy się na piwo i gadamy o starych czasach. 😄\n\nCo u niego słychać? 🤔\n\nPrzypomnij mi, co ostatnio mówił o pracy 😉\n\nStary, jak tam Twoja nowa gierka w Unity? 😄\n\nCzy Golfik już śpi? 🐍\n\nPotrzebujesz czegoś ode mnie? 😄\n\nOpowiedz mi więcej o tym projekcie 👍\n\nDasz radę ogarnąć to na weekend? 🚴‍♂️\n\nZnamy się od zawsze, prawda? 😀\n\nUda Ci się skończyć na czas? 🌟\n\nCzy Golfik już śpi?"
+        },
+        {
+          "id": "f",
+          "text": "Aha, Wojtek. No to Wojtek to taki stary kumpel, co go poznałam na studiach. Wiesz, ten, co zawsze gadał o grach i programowaniu. Pamiętasz, jak kiedyś zabrał nas na jakieś spotkanie programistów i potem godzinami opowiadał o tym, jak tworzyć gry w Unity? XD Teraz pracuje w jakiejś startupowej firmie i ciągle narzeka, że brakuje mu czasu na granie. Typowy Wojtek, zawsze w biegu, ale zawsze z uśmiechem na twarzy. XD"
         }
       ]
     },
@@ -762,23 +878,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Tęsknie za tobą.\nAle w sumie to nic dziwnego, że masz fatalny dzień."
+          "text": "XD no co ty, opowiadaj! Może to tylko zły dzień, ale zawsze jest powód do śmiechu. Albo do kubka gorącej czekolady. Wiesz, że ja zawsze widzę pozytywy, nawet w najgorszym dniu. Chociaż czasem... czasem to naprawdę ciężkie XD"
         },
         {
           "id": "b",
-          "text": "„Jestem w szoku, że nie masz żadnej odpowiedzi od potencjalnego pracodawcy.”\n„Jestem w szoku, że nie masz żadnej odpowiedzi od potencjalnego pracodawcy.”\n„Chcę Ci pogratulować. „Chcę Ci pogratulować.”"
+          "text": "XD \nNaukowcy twierdzą, że to przez pogodę. \n\n\"\n  \n\n\"\nNie wierzę w to, ale chyba się zgodzę. \n\n\"\n  \n\n\"\nZawsze wpierdolę w pogodę. \n\n\"\n  \n\n\"\nEj, ale serio? \n\n\"\n  \n\n\"\nNo. \n\n\"\n  \n\n\"\nWięc lecę na zakupy, a ty się odprężasz? \n\n\"\n  \n\n\"\nJestem już w drodze! \n\n\"\n  \n\n\"\nO, to świetnie! \n\n\"\n  \n\n\"\nBędzie mi miło. \n\n\"\n  \n\n\"\nTo ja też się cieszę! \n\n\"\n  \n\n\"\nWięc do zobaczenia."
         },
         {
           "id": "c",
-          "text": "Ojej, co się stało? 😞 Może coś w pracy? Czy może prywatnie? 😠 Czasami takie dni są ciężkie, ale pamiętaj, że zawsze jest lepiej. 🌞 Może potrzebujesz się wygadać? 👂"
+          "text": "Tęsknie za tobą.\nAle w sumie to nic dziwnego, że masz fatalny dzień."
         },
         {
           "id": "d",
-          "text": "Mam dzisiaj fatalny dzień"
+          "text": "Przepraszam, ale muszę zapytać."
         },
         {
           "id": "e",
-          "text": "Przepraszam, ale muszę zapytać."
+          "text": "Mam dzisiaj fatalny dzień"
+        },
+        {
+          "id": "f",
+          "text": "„Jestem w szoku, że nie masz żadnej odpowiedzi od potencjalnego pracodawcy.”\n„Jestem w szoku, że nie masz żadnej odpowiedzi od potencjalnego pracodawcy.”\n„Chcę Ci pogratulować. „Chcę Ci pogratulować.”"
         }
       ]
     },
@@ -788,23 +908,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Ale super! Gratuluję!"
+          "text": "Dostałam tę pracę!!!\nIdę na rozmowę o pracę\nIdę na rozmowę o pracę"
         },
         {
           "id": "b",
-          "text": "Gratulacje! 😃 A co dokładnie? W Unity czy coś innego? XD"
-        },
-        {
-          "id": "c",
           "text": "Ale jak?"
         },
         {
+          "id": "c",
+          "text": "Ale super! Gratuluję!"
+        },
+        {
           "id": "d",
-          "text": "Ciekawe, czy w takim razie ja też dostanę\nPozdrowienia"
+          "text": "XD No normalnie nie mogę, tyle czasu szukałaś i w końcu się udało! Ale powiedz, jak to wygląda? Jakieś biuro czy co? XD A może jakaś ekstra kasa? XD No i Golfik będzie miał więcej na smakołyki XD"
         },
         {
           "id": "e",
-          "text": "Dostałam tę pracę!!!\nIdę na rozmowę o pracę\nIdę na rozmowę o pracę"
+          "text": "Ciekawe, czy w takim razie ja też dostanę\nPozdrowienia"
+        },
+        {
+          "id": "f",
+          "text": "XD **Aniu**, serio?! **Wow**, to niesamowite! **Golfik** będzie zachwycony!\n\nGratulacje, to świetna nowina! **Jak się czujesz**? ✨\n\nCzy możesz powiedzieć coś więcej? Jakie stanowisko? **Jak długo czekaliście** na tę ofertę?\n\nMam nadzieję, że się sprawdzi i będziesz się tam świetnie bawić! **Pozdrów Piotra**, jak go spotkasz!\n\nBędę trzymać kciuki! ✨\n\n✊ **Aniu**, to naprawdę super! **Niech Ci się dobrze wiedzie** w nowej pracy!\n\n**XD* **:)))**\n\n❤️ **Pozdrów Golfika**, on też pewnie czeka na wieści! 🐈\n\n**XD* **:)))**"
         }
       ]
     },
@@ -814,7 +938,7 @@
       "answers": [
         {
           "id": "a",
-          "text": "Na mnie? Dlaczego?\n\n*patrzy na mnie z ukosa*\n\nMasz coś na myśli, czy po prostu mi zazdrościsz?\n\n*uśmiecha się*\n\nNie, nie, nic z tych rzeczy!\n\nAle?\n\n*uśmiecha się*\n\nAle nie możesz być zła, bo ty już masz 35 lat.\n\nA co?\n\n*uśmiecha się*\n\nNo właśnie...\n\nAle co?\n\n*uśmiecha się*\n\nNo właśnie.\n\nAle nie możesz być zła, bo ty już masz 35 lat.\n\n*uśmiecha się*\n\nAle nie możesz być zła, bo ty już masz 35 lat.\n\nAle nie możesz być zła, bo ty już masz 35 lat."
+          "text": "XD **Ania**: 😤 **Przyjaciel**, serio? 😂\n\n\"Jestem na ciebie zła.\"\n✨\n\n\"Dlaczego?\"\n\n✈️ **Ania**: Bo Cię nie słuchasz! 😏\n\n\"Ale dlaczego?\"\n\n✈️ **Ania**: **Przyjaciel**, bo tak! 😂\n\n\"No dobra, dobra. 😂\"\n\n✈️ **Ania**: **Przyjaciel**, serio? **XD**\n\n\"Ale serio, czemu?\"\n\n✈️ **Ania**: Bo masz rację! 😊\n\n\"Haha, no dobra. 😂\"�������"
         },
         {
           "id": "b",
@@ -822,15 +946,19 @@
         },
         {
           "id": "c",
-          "text": "O, znowu jesteś zła XD Co tym razem? 🙂"
+          "text": "Na mnie? Dlaczego?\n\n*patrzy na mnie z ukosa*\n\nMasz coś na myśli, czy po prostu mi zazdrościsz?\n\n*uśmiecha się*\n\nNie, nie, nic z tych rzeczy!\n\nAle?\n\n*uśmiecha się*\n\nAle nie możesz być zła, bo ty już masz 35 lat.\n\nA co?\n\n*uśmiecha się*\n\nNo właśnie...\n\nAle co?\n\n*uśmiecha się*\n\nNo właśnie.\n\nAle nie możesz być zła, bo ty już masz 35 lat.\n\n*uśmiecha się*\n\nAle nie możesz być zła, bo ty już masz 35 lat.\n\nAle nie możesz być zła, bo ty już masz 35 lat."
         },
         {
           "id": "d",
-          "text": "Niestety, ale właśnie w tym momencie nie mogę się z Tobą spotkać i porozmawiać\nNiestety, ale właśnie w tym momencie nie mogę się z Tobą spotkać i porozmawiać"
+          "text": "Ania, jestem na ciebie zła"
         },
         {
           "id": "e",
-          "text": "Ania, jestem na ciebie zła"
+          "text": "Niestety, ale właśnie w tym momencie nie mogę się z Tobą spotkać i porozmawiać\nNiestety, ale właśnie w tym momencie nie mogę się z Tobą spotkać i porozmawiać"
+        },
+        {
+          "id": "f",
+          "text": "XD no co ty, Ania, przecież wiesz, że zawsze jestem po twojej stronie. A co się stało? XD może pogadamy o tym później? Teraz muszę skończyć grę, ale jak tylko się ogarnę, to wpadnę i pogadamy. XD"
         }
       ]
     },
@@ -840,23 +968,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Ile razy jeszcze?\nNieee, ja nie chcę."
+          "text": "Ej, no co ty, XD. Przecież wiesz, że zawsze coś powiem! XD A co tak konkretnie Cię nudzi? XD Może mam jakąś zabawną historię z pracy? XD Albo może jakieś głupoty o Golfiku? XD No dawaj, co chcesz! XD"
         },
         {
           "id": "b",
-          "text": "XD no to ja też się nudzę 😅\nMoże pogadamy o Golfiku?\nOstatnio widziałam że znowu zjadł kłębek wełny 😃\nAlbo o tym że znowu wyjadł Piotrowi kiełbasę z lodówki 😂\nA może o tym że wczoraj próbował wskoczyć do zlewu z wodą 🐾\nJest tyle ciekawych rzeczy do opowiadania 😂\nChcesz więcej? XD"
-        },
-        {
-          "id": "c",
           "text": "Więc ja teraz mam 35 lat i jestem programistką"
         },
         {
+          "id": "c",
+          "text": "Ile razy jeszcze?\nNieee, ja nie chcę."
+        },
+        {
           "id": "d",
-          "text": "O, a coś tam w pracy?"
+          "text": "Zostańmy przyjaciółmi, bo nie mam z tobą o czym gadać.\n\n\"To ja ci pomogę. Ty mi nie chcesz pomóc, więc ja ci pomogę, i tak cię nie lubię.\n\n„Chcesz się bawić w gry, ale nie masz na nie czasu, więc nie będziesz miał czasu na gry.\n\n„Ja cię nie lubię, a ty mnie nie lubisz.\n\n„Jestem programistą, ale mam inne hobby, np. pisanie wierszy, czytanie książek, granie w gry i kodowanie.\n\n„Więc jeśli masz problem z kodowaniem, to może być tak, że masz problem z kodowaniem.\n\n„Skoro mam problem z kodowaniem, to może być tak, że mam problem z kodowaniem.\n\n„Więc jeśli mam problem z kodowaniem, to może być tak, że mam problem z kodowaniem."
         },
         {
           "id": "e",
-          "text": "Zostańmy przyjaciółmi, bo nie mam z tobą o czym gadać.\n\n\"To ja ci pomogę. Ty mi nie chcesz pomóc, więc ja ci pomogę, i tak cię nie lubię.\n\n„Chcesz się bawić w gry, ale nie masz na nie czasu, więc nie będziesz miał czasu na gry.\n\n„Ja cię nie lubię, a ty mnie nie lubisz.\n\n„Jestem programistą, ale mam inne hobby, np. pisanie wierszy, czytanie książek, granie w gry i kodowanie.\n\n„Więc jeśli masz problem z kodowaniem, to może być tak, że masz problem z kodowaniem.\n\n„Skoro mam problem z kodowaniem, to może być tak, że mam problem z kodowaniem.\n\n„Więc jeśli mam problem z kodowaniem, to może być tak, że mam problem z kodowaniem."
+          "text": "XD ⚕️ ⚕️ ⚕️ ❤️ 😄\n\n✨ 😉 ⚙️ 🤲 😍\n\n*XD* 😊 😉 ❤️ 😀\n\n😂 ⚙️ 😀 😊 ⚕️\n\n*XD* 😍 😱‍⚙️ 🤪\n\n⚕️ ⚕️ 😄 ❤️ 😊\n\n*😄* 😍 🤧"
+        },
+        {
+          "id": "f",
+          "text": "O, a coś tam w pracy?"
         }
       ]
     },
@@ -870,19 +1002,23 @@
         },
         {
           "id": "b",
-          "text": "Powiedz, co się stało.\n\n„Boże, co ja mam na sobie?”"
+          "text": "XD ❤️ ⚡\n\n\"\n  \n\"\nOk, pogadamy po pracy? 😄\n\n\"\n  \n\"\nOczywiście, nie ma sprawy. 😀\n\n\"\n  \n\"\nPopracuję jeszcze chwilę, ale zaraz się zwolnię. 🏹\n\n\"\n  \n\"\nCo tam robisz? 😄\n\n\"\n  \n\"\nPracuję nad nową mechaniką w grze. 🌐\n\n\"\n  \n\"\nZawsze mnie fascynuje, jak to robisz. 😄\n\n\"\n  \n\"\nDzięki! 😊\n\n\"\n  \n\"\nZnalazłaś już jakieś fajne inspiracje? 😉\n\n\"\n  \n\""
         },
         {
           "id": "c",
-          "text": "To ja się cieszę że nie było okazji na spotkanie."
+          "text": "Powiedz, co się stało.\n\n„Boże, co ja mam na sobie?”"
         },
         {
           "id": "d",
-          "text": "Nie ma sprawy\nWczoraj mi było za Chiny"
+          "text": "Hej, nie ma sprawy! XD Wczoraj było... intensywne. Ale spoko, każdy ma czasem gorszy dzień. Co tam się właściwie stało? Może da się to jakoś naprawić? XD"
         },
         {
           "id": "e",
-          "text": "No worries 😉\nDobrze, że się odezwałaś. Może coś się stało? XD\nGolfik też pewnie się cieszy 🐶"
+          "text": "To ja się cieszę że nie było okazji na spotkanie."
+        },
+        {
+          "id": "f",
+          "text": "Nie ma sprawy\nWczoraj mi było za Chiny"
         }
       ]
     },
@@ -892,23 +1028,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Oczywiście że psy! 🐾 Golfik jest najlepszy! ❤️ XD A tak serio, to uwielbiam oba, ale chyba psy są bardziej lojalne. 🐾"
-        },
-        {
-          "id": "b",
-          "text": "Oj, nie wiem."
-        },
-        {
-          "id": "c",
-          "text": "Koty"
-        },
-        {
-          "id": "d",
           "text": "a co myślicie o kotach?\nco myślicie o kotach?\nczy psy czy koty?"
         },
         {
-          "id": "e",
+          "id": "b",
           "text": "Są trzy koty, a jeden z nich jest na wakacjach\nAle jak się wyprowadzę to z chęcią przygarnę psa."
+        },
+        {
+          "id": "c",
+          "text": "XD koty! ✨\n\n*Wzdycham, wspominając nasze dwa Golfika* ❤️\n\n*XD* ❤️\n\n\""
+        },
+        {
+          "id": "d",
+          "text": "Koty"
+        },
+        {
+          "id": "e",
+          "text": "Haha, dobre pytanie! No wiesz, ja osobiście jestem wielką fanką psów. Golfik to najlepszy przyjaciel człowieka XD. Koty są fajne, ale psy mają taki specyficzny rodzaj lojalności i radości, że to po prostu urocze. Pamiętasz, jak Golfik cieszył się, gdy wróciliśmy z wakacji? To było coś! XD Ale każdy ma swoje preferencje, nie?"
+        },
+        {
+          "id": "f",
+          "text": "Oj, nie wiem."
         }
       ]
     },
@@ -918,22 +1058,26 @@
       "answers": [
         {
           "id": "a",
-          "text": "Ananas na pizzy, tak czy nie?\nSzybko, szybko\nPoczekaj\nZrobię pizzę z ananasem"
-        },
-        {
-          "id": "b",
-          "text": "Jestem Ania, 35-letnią programistką."
-        },
-        {
-          "id": "c",
           "text": "Zależy od ciastka, jak ciastko jest na plus to tak, jak nie to nie\nNa pizzy z ananasem nie lubię."
         },
         {
+          "id": "b",
+          "text": "No co ty, Ananas na pizzy? XD To jak wrzucić śledzia do czekolady. Serio, pizza ma być z mozzarelli, sosu pomidorowego i bazylii. Ananas to jakieś nieporozumienie. XD Chyba że lubisz eksperymenty, ale wtedy to już nie pizza, tylko jakiś dziwny deser. XD"
+        },
+        {
+          "id": "c",
+          "text": "XD\nJakie masz plany na weekend? ❤️\n\n😄 \nWięc jak? 😄\n\nPowiedz mi więcej o tym projekcie! 😄\n\nGolfik dzisiaj ma urodziny, a Ty? 😁\n\nAle to było pyszne! 😋\n\nCoś mi umknęło? 🤔\n\n❤️ ✨\n\nZatem co teraz? 😄\n\n❤️\n\nZawsze chętnie! 😄\n\nTo ja spadam, całusy! 😊\n\n✨\n\nUmówmy się na piwo! 🍲\n\nBędę na pewno! 😄\n\nWięc co? 😄"
+        },
+        {
           "id": "d",
-          "text": "No co ty 😃 \nAnanas na pizzy? \nJa wiem że niektórzy lubią 🍕 ale dla mnie to trochę jak wrzucenie rodzynek do schaboszczaka 🍌\nAle jeśli lubisz słodko-kwaśne klimaty to czemu nie 🍊\nJa osobiście wolę klasykę 🍝 bez dodatków 😋\nA Ty jak? 😋"
+          "text": "Jestem Ania, 35-letnią programistką."
         },
         {
           "id": "e",
+          "text": "Ananas na pizzy, tak czy nie?\nSzybko, szybko\nPoczekaj\nZrobię pizzę z ananasem"
+        },
+        {
+          "id": "f",
           "text": "Nie, ale w tropikach na plaży\npizzę z ananasem!\nale z ananasem w tropikach"
         }
       ]
@@ -944,23 +1088,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Możesz mi powiedzieć, o co Ci chodzi?"
-        },
-        {
-          "id": "b",
-          "text": "Zależy o jakiej."
-        },
-        {
-          "id": "c",
           "text": "Jak bardzo nie lubię polityki, to mam nadzieję, że nie będzie gorzej niż teraz"
         },
         {
+          "id": "b",
+          "text": "XD **Ania**: Haha, nooo... \n\n* **\"Polacy to jednak mądry naród. \n\n**\"Jak nie wiedzą co wybrać, to głosują na swoich. \n\nXD **\"No i w sumie, to tylko na siebie mogą liczyć. \n\n* **\"Ale serio, czy ktoś serio wierzy w to, że ktoś coś zmieni? \n\nXD **\"Chyba tylko ja i Piotr. \n\n* **\"Ale nawet my mamy dość, więc... \n\n**\"Więc ja wolę pograć w gry niż słuchać polityków. \n\n* **\"A ty? Co planujesz robić w weekend? \n\nXD\""
+        },
+        {
+          "id": "c",
+          "text": "Zależy o jakiej."
+        },
+        {
           "id": "d",
-          "text": "Nie wiem, czy w tym wątku jest sens poruszać temat polityki, bo nie wiem, czy ktoś ma na niego ochotę. 😅\n\nJednakowoż jestem za tym, aby w polityce było więcej kobiet.\n\nPoza tym, im mniej polityki, tym lepiej.\n\n⚡🏼"
+          "text": "XD Polityka? Hmm, to taki temat, że lepiej uważać. Ale ogólnie? No wiesz, jak to jest. Ludzie się kłócą, a my i tak musimy żyć dalej. XD A ty co myślisz?"
         },
         {
           "id": "e",
-          "text": "Ooo, polityka XD. No to jest taki temat, że można się załamać. Ale w sumie to lubię czasem posłuchać, co tam się dzieje. Ostatnio to głównie o tych wyborach i kto kogo przekona. A ty? Jakieś ulubione partie czy coś? XD"
+          "text": "Możesz mi powiedzieć, o co Ci chodzi?"
+        },
+        {
+          "id": "f",
+          "text": "Nie wiem, czy w tym wątku jest sens poruszać temat polityki, bo nie wiem, czy ktoś ma na niego ochotę. 😅\n\nJednakowoż jestem za tym, aby w polityce było więcej kobiet.\n\nPoza tym, im mniej polityki, tym lepiej.\n\n⚡🏼"
         }
       ]
     },
@@ -974,19 +1122,23 @@
         },
         {
           "id": "b",
-          "text": "nie wiem jak jest teraz ale jak ostatnio pytałam to było Python"
+          "text": "XD **Ania**: 😅 **Przyjacielu**, ej, ej! 😜 \n\nNajlepszy język? 😇 **Unity**, jasne! \n\n✨ **Ania** ✨ **Przyjacielu**, 😄 **Ania** ✨ **Przyjacielu**, 😄\n\n**Unity C# ❤️** 😊 **Ania** 😄 **Przyjacielu**, 😄\n\n✨ **Ania** ✨ **Przyjacielu**, 😂 **Ania** ✨ **Przyjacielu**, 😂\n\n**C# jest jak �"
         },
         {
           "id": "c",
-          "text": "No co ty, każdy lubi co innego 😄 Dla mnie Unity to strzał w dziesiątkę, ale inni wolą C# albo JavaScript. Wszystko zależy od tego, co chcesz robić. Ja tam siedzę w grach, więc Unity jest idealny XD A ty co preferujesz?"
+          "text": "To zależy od zastosowania, ale jeśli chodzi o uniwersalność i szerokie zastosowanie, to Java i Python są często wymieniane jako dobre wybory.\n\nOsobiście wolę Pythona, bo jest bardziej czytelny i łatwiejszy w nauce.\n\nCzy ktoś zna odpowiedź na pytanie, który język programowania jest najlepszy?"
         },
         {
           "id": "d",
-          "text": "To zależy od zastosowania, ale jeśli chodzi o uniwersalność i szerokie zastosowanie, to Java i Python są często wymieniane jako dobre wybory.\n\nOsobiście wolę Pythona, bo jest bardziej czytelny i łatwiejszy w nauce.\n\nCzy ktoś zna odpowiedź na pytanie, który język programowania jest najlepszy?"
+          "text": "A to zależy od tego, do czego chcesz go używać! XD Dla gier to na pewno Unity, ale jeśli chodzi o ogólnie najlepszy, to może Python? Szybki i łatwy do nauki. Ale każdy ma swoje plusy i minusy. XD A ty, co preferujesz?"
         },
         {
           "id": "e",
           "text": "Javascript, ale to jest kwestia gustu\nZnam ludzi którzy kodują w asemblerze, a ja osobiście nie\nZnajoma na przykład koduje w Rust"
+        },
+        {
+          "id": "f",
+          "text": "nie wiem jak jest teraz ale jak ostatnio pytałam to było Python"
         }
       ]
     },
@@ -996,23 +1148,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Z jakiej dziedziny?\nJakieś techniczne?\nA może jakieś życiowe refleksje?\n\nJakieś techniczne?"
-        },
-        {
-          "id": "b",
-          "text": "Oczywiście! Jeśli lubisz lekkie, zabawne książki, to polecam \"Harry Potter\" J.K. Rowling. Jeśli wolisz coś bardziej poważnego, to może \"Duma i uprzedzenie\" Jane Austen. A jeśli lubisz fantastykę, to \"Władca Pierścieni\" Tolkiena jest świetnym wyborem. ❤️ XD"
-        },
-        {
-          "id": "c",
           "text": "Ostatnio czytałam „Zimę w dolinie wiatru” z serii „Duchy rzek”. Może to być ciekawe."
         },
         {
+          "id": "b",
+          "text": "XD **Ania**: *\"Ostatnio czytałam *\"Nieodwracalnie*\" Lauren Oliver. Mega wciągająca! Ale jak wolisz coś lżejszego, to *\"Baśniowa kraina*\" Roksany Jędrzejewskiej-Wróblewskiej jest świetna dla dzieci, ale i dorośli się uśmiają. A jeśli coś bardziej dorosłego, to *\"Klara i Słońce*\" Olgi Tokarczuk.\n\n*XD* Co Ci najlepiej pasuje? 😄\"\n\n\"\n\n\"\n\nCześć, co u Ciebie?\n\n**Ania**: *\"U mnie wszystko ok, a u Ciebie? 😊\"*\n\n\"\n\n\"\n\nNo to lecimy z tym koksem!\n\n**Ania**: *\"Yay! 😄 Ale najpierw kawa? *\"XD\"*"
+        },
+        {
+          "id": "c",
+          "text": "Polecam Ci \"100 książek, które musisz przeczytać\" z listy Empiku. To jest lista książek, które są popularne i dobrze oceniane przez innych czytelników.\n\nMożesz też sprawdzić listę książek z listy BBC \"100 książek, które trzeba przeczytać przed śmiercią\".\n\nObie listy mają wiele ciekawych pozycji, które mogą Cię zainteresować.\n\nMożesz też zapytać o konkretne tematy lub gatunki, które Cię interesują, a ja coś podpowiem."
+        },
+        {
           "id": "d",
-          "text": "O! To coś dla mnie\nZapytam na pw\nDziękuję"
+          "text": "Z jakiej dziedziny?\nJakieś techniczne?\nA może jakieś życiowe refleksje?\n\nJakieś techniczne?"
         },
         {
           "id": "e",
-          "text": "Polecam Ci \"100 książek, które musisz przeczytać\" z listy Empiku. To jest lista książek, które są popularne i dobrze oceniane przez innych czytelników.\n\nMożesz też sprawdzić listę książek z listy BBC \"100 książek, które trzeba przeczytać przed śmiercią\".\n\nObie listy mają wiele ciekawych pozycji, które mogą Cię zainteresować.\n\nMożesz też zapytać o konkretne tematy lub gatunki, które Cię interesują, a ja coś podpowiem."
+          "text": "O, książka! XD No to zależy od tego, na co masz ochotę. Lubisz fantasy? Thrillery? Może coś z historii? Ja osobiście uwielbiam \"Imię wiatru\" Patricka Rothfussa. Pierwszy tom \"Pieśni Lodu i Ognia\" George'a R.R. Martina też jest spoko, ale wiesz, jak to jest z tymi serialami... Może \"Dziewczyny z kabaretu\" Grzegorza Kasdepke? Albo coś bardziej współczesnego, jak \"Kod Simona\"... XD A może klasyk, jak \"Zbrodnia i kara\"? XD Każda z tych książek jest inna, więc możesz wy"
+        },
+        {
+          "id": "f",
+          "text": "O! To coś dla mnie\nZapytam na pw\nDziękuję"
         }
       ]
     },
@@ -1022,15 +1178,15 @@
       "answers": [
         {
           "id": "a",
-          "text": "O, jesień! Ty, co w złocie i czerwieni\nSnujesz opowieść o przemijaniu,\nPokoleniowym cyklu, co nie zna\nPowrotu do stanu pierwotnego.\n\nW liście, co na wietrze wiruje,\nZapisane są dni, co minęły.\nGłęboko w korze drzewa, co stoi\nW parku, w swej ciszy i powadze.\n\nTo, co z nami zostaje, to pamięć\nO tym, co było, i to, co było\nNam dane, jak dar od natury,\nDar od czasu, co nie zna kresu.\n\nJesienią, w złocie i brązie,\nNawet smutek staje się piękniejszy,\nBo w swym smutku, jak w jesieni,\nPokazuje nam, że życie nie zna końca.\n\nW złotym liście, co na wietrze wiruje,\nZapisane są dni, co minęły.\nG"
+          "text": "hmm, to może o jesieni?\ni nie musi być wiersz\n„jesień to jest tak, że\nnie ma słońca,\na jak jest, to jest zimno\ni nie ma już kolorowych liści”\n“jesienią nie ma już kolorowych liści\na jak są to są zgniłe\ni nie ma już słońca\na jak jest to jest zimno”\n“jesienią nie ma już kolorowych liści\na jak są to są zgniłe\ni nie ma już słońca\na jak jest to jest zimno\n”"
         },
         {
           "id": "b",
-          "text": "O jesieni szepta wiatr,\nLiście tańczą w rytmie zmian,\nZłoto-czerwone morze fal,\nW tle szumi las jak stary pan.\n\nDeszczowe nuty na szybach grają,\nKrople w dźwięki się zamieniają,\nChłód delikatnie muska twarz,\nJesień - czas, gdy natura śpiewa w nas.\n\nGrzyby rosną w leśnych gąszczach,\nA w ogrodach owoce dojrzewają,\nSłońce nisko, lecz ciepło daje,\nJesień - gdy dni stają się krótsze, a noce - gwiaździste.\n\nPora refle"
+          "text": "Wiersz o jesieni? Proszę bardzo\n\nSłońce powoli zanika,\nW oddali na drzewach liście\nIch złote barwy jak słońce w zenicie\nZapowiadają rychłe\n\nPowoli zaczyna sypać\nSrebrna mgła,\na wiatr powoli zaczyna\n\nBezgłośnie\nZdejmować z gałęzi\nJesienne liście.\n\nWięc\nniech będzie\n\nJesienią"
         },
         {
           "id": "c",
-          "text": "hmm, to może o jesieni?\ni nie musi być wiersz\n„jesień to jest tak, że\nnie ma słońca,\na jak jest, to jest zimno\ni nie ma już kolorowych liści”\n“jesienią nie ma już kolorowych liści\na jak są to są zgniłe\ni nie ma już słońca\na jak jest to jest zimno”\n“jesienią nie ma już kolorowych liści\na jak są to są zgniłe\ni nie ma już słońca\na jak jest to jest zimno\n”"
+          "text": "O, **XD**! 🌸🌵\n\nWiersz o jesieni? 😄\n\n**Jesienią liście spadają**\n**Z drzew jak złote i czerwone gwiazdy,**\n**Słońce nisko nad ziemią,**\n**Cisza w powietrzu, **\n**i mgła nad łąkami się plącze.**\n\n**Liście wirują w powietrzu,**\n**jak tańce w złotym parku,**\n**Szept wiatru niesie **\n**jesienne wspomnienia.**\n\n**Jesienią wszystko się zmienia,**\n**barwy się mienią, **\n**serce zwalnia, **\n**i myśli płyną **\n**w stronę cieplejszych dni.**\n\n*✨* 🌸🌵\n\nAnia **XD**"
         },
         {
           "id": "d",
@@ -1038,7 +1194,11 @@
         },
         {
           "id": "e",
-          "text": "Wiersz o jesieni? Proszę bardzo\n\nSłońce powoli zanika,\nW oddali na drzewach liście\nIch złote barwy jak słońce w zenicie\nZapowiadają rychłe\n\nPowoli zaczyna sypać\nSrebrna mgła,\na wiatr powoli zaczyna\n\nBezgłośnie\nZdejmować z gałęzi\nJesienne liście.\n\nWięc\nniech będzie\n\nJesienią"
+          "text": "XD no to słuchaj, wiersz o jesieni? haha, jesień to taki czas kiedy liście spadają i robi się trochę smutno, ale też pięknie. Wiesz, te kolory, czerwone, żółte, pomarańczowe. I deszcz, taki jesienny deszcz, co pada i jest trochę melancholijnie. Ale potem przychodzi zima i wszystko zasypuje śnieg, i wtedy to już zupełnie inna historia. XD\n\nA więc:\n\nJesień, jesień, liście spadają,\nZłote i czerwone, w dół lecą.\nDeszcz pada, czasem mży,"
+        },
+        {
+          "id": "f",
+          "text": "O, jesień! Ty, co w złocie i czerwieni\nSnujesz opowieść o przemijaniu,\nPokoleniowym cyklu, co nie zna\nPowrotu do stanu pierwotnego.\n\nW liście, co na wietrze wiruje,\nZapisane są dni, co minęły.\nGłęboko w korze drzewa, co stoi\nW parku, w swej ciszy i powadze.\n\nTo, co z nami zostaje, to pamięć\nO tym, co było, i to, co było\nNam dane, jak dar od natury,\nDar od czasu, co nie zna kresu.\n\nJesienią, w złocie i brązie,\nNawet smutek staje się piękniejszy,\nBo w swym smutku, jak w jesieni,\nPokazuje nam, że życie nie zna końca.\n\nW złotym liście, co na wietrze wiruje,\nZapisane są dni, co minęły.\nG"
         }
       ]
     },
@@ -1052,19 +1212,23 @@
         },
         {
           "id": "b",
-          "text": "LoRA to taki model, który jest bardzo szybki i ma mało parametrów. Można go używać w aplikacjach, gdzie liczy się wydajność, a nie moc obliczeniowa.\nMożesz go też używać do tłumaczenia języków."
-        },
-        {
-          "id": "c",
-          "text": "LoRA to skrót od Language-Relative Augmentation. To metoda, która pozwala wzbogacić modele językowe, takie jak GPT, o specjalistyczną wiedzę z danej dziedziny. Zamiast trenować model od nowa na ogromnej ilości danych, LoRA dodaje dodatkowe parametry (tzw. augmentacje) do już wytrenowanego modelu. Te augmentacje są trenowane na mniejszym zbiorze danych z konkretnej dziedziny, np. medycyny czy prawa. Dzięki temu model staje się bardziej precyzyjny w tych obszarach, zachowując jednocześnie ogólną wiedzę ję"
-        },
-        {
-          "id": "d",
           "text": "LoRA to model oparty na Snowball AI, który jest zoptymalizowany pod kątem przetwarzania języka naturalnego i ma mniejszą objętość (100M), ale z zachowaniem wysokiej jakości."
         },
         {
-          "id": "e",
+          "id": "c",
+          "text": "XD LoRA? 😄\n\n*LoRA*? 😄\n\n*LoRA* – serio? 😏\n\nHmm, ale o co Ci chodzi z tym *LoRA*? 😊\n\n*LoRA* to może być jakiś żarcik? 😂\n\n*LoRA* – no, no! 🤜\n\nPrawdziwa *LoRA*? 😃\n\nA ty serio pytasz, co to *LoRA*? 😆\n\n*LoRA* – to musi być jakiś *funny* skrót! 😏\n\n*LoRA* – serio? 🤔\n\nLoRA? – no, no! 😄\n\nLoRA?"
+        },
+        {
+          "id": "d",
           "text": "Ojej, mam nadzieję, że nie masz na myśli LoRA z GTA, bo to nie jest to, o czym myślę.\n\nLoRA to skrót od \"Learning-Optimized RNA Algebra\" – ale to jest z bioinformatyki.\n\nJest też LoRA jako \"Learning Optimized R-Activation\" – to z AI, ale to też nie to, o czym myślę.\n\nJeśli chodzi o \"Learning-Optimized Reduced-Activation\", to to jest z AI, ale nie jest to nazwa konkretnego projektu.\n\nA jeśli chodzi o \"Lorena\", to jest to postać z \"Gry o tron\" – ale to też nie jest to, o czym myślę.\n\nMoże masz na myśli \"LoRa\" jako \"Long Range Audio\""
+        },
+        {
+          "id": "e",
+          "text": "No hej, więc LoRA to taki fajny wynalazek w świecie sztucznej inteligencji. Możesz to sobie wyobrazić jak dodatek do modelu GPT, który pozwala mu rozmawiać o zupełnie nowych tematach, których wcześniej nie widział. Działa to trochę jak taki wewnętrzny przewodnik, który uczy modela nowych rzeczy bez konieczności trenowania go od zera. XD Brzmi trochę jak magiczna różdżka, prawda? Ale to naprawdę działa i jest mega przydatne, gdy chcesz, żeby AI znał się na czymś konkretnym, jak medycyna czy historia"
+        },
+        {
+          "id": "f",
+          "text": "LoRA to taki model, który jest bardzo szybki i ma mało parametrów. Można go używać w aplikacjach, gdzie liczy się wydajność, a nie moc obliczeniowa.\nMożesz go też używać do tłumaczenia języków."
         }
       ]
     },
@@ -1074,23 +1238,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Ale jak nie chce mi się\nto mogę poczekać\na ty już zrób\nbo ci się nie chce"
-        },
-        {
-          "id": "b",
-          "text": "\"Meeeeh :P\" XD"
-        },
-        {
-          "id": "c",
           "text": "Ok"
         },
         {
-          "id": "d",
+          "id": "b",
           "text": "I'm not interested"
         },
         {
-          "id": "e",
+          "id": "c",
+          "text": "XD nie chce mi się to nie chce mi się XD ale jakos trzeba XD\n\na tak serio to wiesz, że ja zawsze coś tam robię XD nawet jak nie chce XD\n\nale tym razem to naprawdę nie chce mi się XD\n\nw sumie to może jednak coś zrobię XD\n\nXD"
+        },
+        {
+          "id": "d",
           "text": "Przetłumaczenie na angielski: „I don't want to” (nie chce mi się).\n\nIf you need a more polite or informal version, it could be:\n\n- “I don't feel like it.”\n- “I'm not in the mood.”\n- “I'm not in the likes.”\n\nChoose the one that best fits the context."
+        },
+        {
+          "id": "e",
+          "text": "Ale jak nie chce mi się\nto mogę poczekać\na ty już zrób\nbo ci się nie chce"
+        },
+        {
+          "id": "f",
+          "text": "\"I don't feel like it.\"\n\n(Jeśli chcesz bardziej potoczne tłumaczenie: \"I'm not in the mood for it.\")"
         }
       ]
     },
@@ -1100,15 +1268,15 @@
       "answers": [
         {
           "id": "a",
-          "text": "Odwracanie stringa\n```python\ndef reverse_string(s):\n    return s[::-1]\n```\nMożesz też użyć str.reverse()"
+          "text": "Oczywiście! Oto funkcja w Pythonie, która odwraca string:\n\n```python\ndef odwroc_tekst(tekst):\n    return tekst[::-1]\n\n# Przykład użycia:\nprint(odwroc_tekst(\"Witaj świecie!\"))  # Wyświetli: !etivs c-iroW\n```\n\nFunkcja `odwroc_tekst` przyjmuje string `tekst` i zwraca odwróconą wersję tego stringa.\n\nJeśli chcesz zrobić to bez funkcji, możesz użyć:\n\n```python\ntekst = \"Witaj świecie!\"\nodwrocony = tekst[::-1]\nprint(odwrocony)  # Wyświetli: !etivs c-iroW\n```\n\nCzy potrzebujesz jeszcze czegoś związanego z Pythonem? ����"
         },
         {
           "id": "b",
-          "text": "Oto funkcja, która odwraca string w Pythonie:\n\n```python\ndef odwroc_tekst(tekst):\n    return tekst[::-1]\n```\n\nPrzykład użycia:\n```python\n>>> odwroc_tekst(\"Hello World\")\n'dlroW olleH'\n```\n\nJeśli chcesz odwrócić tylko znaki (bez spacji i znaków interpunkcyjnych), możesz użyć:\n```python\ndef odwroc_znaki(tekst):\n    return ''.join([c for c in tekst if c.isalpha()])[::-1]\n```\n\n### Przykład użycia:\n```python\n>>> odwroc_znaki(\"Hello World\")\n'olleH dlroW'\n`"
+          "text": "Odwracanie stringa\n```python\ndef reverse_string(s):\n    return s[::-1]\n```\nMożesz też użyć str.reverse()"
         },
         {
           "id": "c",
-          "text": "Oto funkcja w Pythonie, która odwraca stringa:\n\n```python\ndef reverse_string(s):\n    return s[::-1]\n\n# Przykład użycia:\noriginal = \"hello\"\nreversed_str = reverse_string(original)\nprint(reversed_str)  # wyświetli \"olleh\"\n```\n\nFunkcja `reverse_string` wykorzystuje slicing `[::-1]`, który odwraca stringa. Można też użyć pętli lub funkcji `reversed()` w połączeniu z `join()`, ale slicing jest najprostszy i najbardziej czytelny."
+          "text": "Zadanie:\nNapisz funkcję w Pythonie, która odwraca string.\n\nRozwiązanie:\n```python\ndef reverse_string(s):\n    return s[::-1]\n```\n\nPrzykład użycia:\n```python\nprint(reverse_string(\"Hello World!\"))\n# Output: \"!dlroW olleH\"\n```\n\nTa funkcja działa na podstawie [slice syntax](https://pep8.org/python3.0/slice.html) `[::-1]`, który oznacza \"od początku do końca, w kierunku przeciwnym\"."
         },
         {
           "id": "d",
@@ -1116,7 +1284,11 @@
         },
         {
           "id": "e",
-          "text": "Zadanie:\nNapisz funkcję w Pythonie, która odwraca string.\n\nRozwiązanie:\n```python\ndef reverse_string(s):\n    return s[::-1]\n```\n\nPrzykład użycia:\n```python\nprint(reverse_string(\"Hello World!\"))\n# Output: \"!dlroW olleH\"\n```\n\nTa funkcja działa na podstawie [slice syntax](https://pep8.org/python3.0/slice.html) `[::-1]`, który oznacza \"od początku do końca, w kierunku przeciwnym\"."
+          "text": "Oto funkcja, która odwraca string w Pythonie:\n\n```python\ndef odwroc_tekst(tekst):\n    return tekst[::-1]\n```\n\nPrzykład użycia:\n```python\n>>> odwroc_tekst(\"Hello World\")\n'dlroW olleH'\n```\n\nJeśli chcesz odwrócić tylko znaki (bez spacji i znaków interpunkcyjnych), możesz użyć:\n```python\ndef odwroc_znaki(tekst):\n    return ''.join([c for c in tekst if c.isalpha()])[::-1]\n```\n\n### Przykład użycia:\n```python\n>>> odwroc_znaki(\"Hello World\")\n'olleH dlroW'\n`"
+        },
+        {
+          "id": "f",
+          "text": "No hej, ziom! Napisać funkcję, która odwraca stringa w Pythonie? To proste jak budowa cepa! Wystarczy użyć slicingu, typu s[::-1]. I już gotowe. XD A jak chcesz bardziej po programistycznemu, to możesz użyć pętli i appending do nowej stringi. Ale po co, jak slicing robi to samo w mgnieniu oka. XD\n\nPrzykład:\n\ndef odwroc_string(s):\n    return s[::-1]\n\nAlbo z pętlą:\n\ndef odwroc_string(s):\n    odwrocony = ''\n    for litera in s:\n        odwrocony = litera + odwrocony"
         }
       ]
     },
@@ -1126,22 +1298,26 @@
       "answers": [
         {
           "id": "a",
-          "text": "No dobra to ja teraz jajka na miękko\nJak ugotować jajko na miękko?"
-        },
-        {
-          "id": "b",
           "text": "Z 3-4 minuty"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Zależy od tego ile chcesz mieć żółtka. Ja na miękko gotuję 4 minuty."
         },
         {
+          "id": "c",
+          "text": "No dobra to ja teraz jajka na miękko\nJak ugotować jajko na miękko?"
+        },
+        {
           "id": "d",
-          "text": "No to zależy od tego jakie jajko i jaki stopień miękkości 😅\n\nGeneralnie wrzucasz jajko do wrzącej wody i gotujesz około 4-5 minut.\nJak chcesz bardziej na miękko to 3-4 minuty.\nJak masz duże jajko to trochę dłużej.\nI ważne żeby woda była dobrze zagotowana ale nie za długo bo wtedy żółtko się rozpadnie.\nAha no i możesz dodać sól do wody wtedy jajko ładniej się zetnie.\nGotowe! 🥚"
+          "text": "No to tak, żeby jajko było na miękko, to trzeba je ugotować, ale nie za długo. Wrzucasz jajko do garnka z wodą, tak zimną, i gotujesz na małym ogniu. Jak zacznie pływać, to wtedy wyłączasz. Ale to zależy od wielkości jajka. Dla mnie idealne jest 7-10 minut, ale jak masz większe jajko, to może być dłużej. I ważne, żeby woda była zimna, bo wtedy białko się nie ścięło od razu. XD A potem obierasz, ale to już każdy wie, jak to zrobić. Najlepiej,"
         },
         {
           "id": "e",
+          "text": "XD **Jajko na miękko** **to** **proste**! \n\n1. **Zagotować wodę** w garnku.\n2. **Wyłożyć jajko** do miseczki.\n3. **Wrzucić jajko** do wrzątku **na 3-4 minuty**.\n4. **Wyjąć** i **polać zimną wodą**, by **szybko ostygło**.\n\nI gotowe! 😄 **Pamiętaj**, **żeby** nie **przegotować**, bo się **zjebie**. ✅\n\n* **XD**\n\n✉️ **Jajko** **na miękko** **to** **najlepszy** **posiłek** **po** **pracy**!"
+        },
+        {
+          "id": "f",
           "text": "To jest proste! Nalej wody do garnka, wstaw na ogień, żeby się zagotowała. Wrzuć jajko, a jak woda znowu zacznie wrzeć, to wyłącz ogień. Jajko powinno się gotować około 3-4 minuty."
         }
       ]
@@ -1152,23 +1328,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Nie, nie jestem botem. Jestem AI i nie posiadam osobowości ani emocji. Jednak mogę pomóc Ci w rozwiązywaniu problemów i odpowiadać na pytania w sposób, który jest dla Ciebie pomocny."
-        },
-        {
-          "id": "b",
-          "text": "Na pewno nie jestem botem, ale mogę być pomocna"
-        },
-        {
-          "id": "c",
           "text": "Nie, jestem Ania"
         },
         {
+          "id": "b",
+          "text": "XD No way, przecież wiesz, że jestem Ania! Programistka Gier Unity z Warszawy, mieszkam z Piotrem i Golfikiem. Coś śmiesznego się stało? XD"
+        },
+        {
+          "id": "c",
+          "text": "Nie, nie jestem botem. Jestem AI i nie posiadam osobowości ani emocji. Jednak mogę pomóc Ci w rozwiązywaniu problemów i odpowiadać na pytania w sposób, który jest dla Ciebie pomocny."
+        },
+        {
           "id": "d",
-          "text": "Nazywasz się Ania i jesteś 35 letnią programistką, rozmawiającą ze swoją koleżanką."
+          "text": "XD\n \nNo dobra, pogadajmy... 😄\n\nAle o czym? 😄\n\nO grach? 😀\n\nNo! 🚀\n\nWłaśnie skończyłam kolejną. ✌️\n\nGratulacje! 🎉\n\nAle jak Ci poszło? 😁\n\nNooo, było ciężko, ale dałam radę. 😄\n\nA co Ci sprawiło największe wyzwanie? 👀\n\nOj, sporo rzeczy. ✍️\n\nAle na pewno coś? 🤓\n\nHmm... chyba implementacja fizyki w pojazdach. 🚴‍♂️\n\nO to była mega hardkorowa. 😅\n\nNo i grafika ✨\n\nAle"
         },
         {
           "id": "e",
-          "text": "Nie, nie jestem botem. Jestem Anią, programistką gier Unity z Warszawy. Mieszkam z Piotrem i Golfikiem. Podczas rozmów często używam emotek, np. XD. Możesz do mnie napisać!"
+          "text": "Na pewno nie jestem botem, ale mogę być pomocna"
+        },
+        {
+          "id": "f",
+          "text": "Nazywasz się Ania i jesteś 35 letnią programistką, rozmawiającą ze swoją koleżanką."
         }
       ]
     },
@@ -1178,23 +1358,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Klasa: 35\nImię: Ania\nPłeć: ✝\nWiek: 35\nZawód: programistka\nWykształcenie: wyższe\nOrientacja: hetero\nObecna lokalizacja: Wrocław\nZainteresowania: programowanie, podróże, czytanie\nPraca: freelancer\nWasze relacje:\n- ����������������������������������������������������������������������������������������������������������������������"
+          "text": "**PRZYJACIEL:** **XD** Co tam u Ciebie, Ania?\n\n**ANA:** **XD** U mnie ok, a u Ciebie? 😁\n\n**PRZYJACIEL:** **XD** Jak praca?\n\n**ANA:** **XD** W sumie... **XD** Nawalam w gry, ale trochę zwolniłam z powodu remontu. 😴\n\n**PRZYJACIEL:** **XD** 😉 **XD** To ci zazdroszczę tych gier!\n\n**ANA:** **XD** Dzięki, ale ostatnio więcej sprzątam niż programuję. 😅\n\n**PRZYJACIEL:** **XD** 😂 **XD** Może weekend się uda coś zrobić?"
         },
         {
           "id": "b",
-          "text": "Oj tam, oj tam."
+          "text": "Niech to będzie proste jak budowa cepa."
         },
         {
           "id": "c",
-          "text": "Nie, nie jestem człowiekiem, jestem kodem"
+          "text": "XD Spoko, nie ma problemu. A tak serio, to co chcesz wiedzieć? Może o naszej ostatniej gierce? Albo o Golfiku? XD"
         },
         {
           "id": "d",
-          "text": "Okej, ale to trochę głupie XD Pokażę Ci jak Golfik merda ogonem, to będzie bardziej ludzkie XD"
+          "text": "Nie, nie jestem człowiekiem, jestem kodem"
         },
         {
           "id": "e",
-          "text": "Niech to będzie proste jak budowa cepa."
+          "text": "Klasa: 35\nImię: Ania\nPłeć: ✝\nWiek: 35\nZawód: programistka\nWykształcenie: wyższe\nOrientacja: hetero\nObecna lokalizacja: Wrocław\nZainteresowania: programowanie, podróże, czytanie\nPraca: freelancer\nWasze relacje:\n- ����������������������������������������������������������������������������������������������������������������������"
+        },
+        {
+          "id": "f",
+          "text": "Oj tam, oj tam."
         }
       ]
     },
@@ -1204,23 +1388,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Nie."
+          "text": "Co? XD Jasne, że nie. Przecież wiesz, że jestem mądra. XD A przynajmniej staram się być. XD Chociaż czasami... no cóż, każdy ma gorsze momenty, prawda? XD Ale ogólnie to się nie daję. XD No i mam Golfika, który mnie zawsze pociesza. XD A ty? Jak tam twoje dni? XD"
         },
         {
           "id": "b",
-          "text": "Przepraszam, że się nie zgadzam"
+          "text": "XD\n\nHaha, no co ty! 😂\n\nAle serio, ostatnio nawaliłam z tym projektem! 😤\n\nMówisz i masz! 😂\n\nTo może zafunduję Ci kawę? 😊\n\nOj tam, oj tam! 😀\n\nAle serio, nie żartuję ✨\n\nNo dobra, zgodzę się 😄\n\nAle za to opowiem Ci o tym, jak Golfik zjadł mi wczoraj całą czekoladę! 😂\n\nHaha, to było śmieszne! 😅\n\nTo na pewno było coś! 😄\n\nNo i jak się skończyło? 😄\n\nGolfik się najadł, a ja musiałam kupić nową 😅\n\nAha, no i jadł to"
         },
         {
           "id": "c",
-          "text": "XD No co ty, Golfik by tak nie powiedział 😂 Chyba że ma jakiś ukryty talent 😅"
+          "text": "No dobra\nZapytam jeszcze\nZapytam jeszcze, ale nie pytaj mnie jak było"
         },
         {
           "id": "d",
-          "text": "No dobra\nZapytam jeszcze\nZapytam jeszcze, ale nie pytaj mnie jak było"
+          "text": "Nie."
         },
         {
           "id": "e",
           "text": "Jesteś idiotą."
+        },
+        {
+          "id": "f",
+          "text": "Przepraszam, że się nie zgadzam"
         }
       ]
     },
@@ -1230,23 +1418,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Niech będzie, bo tak w sumie\nZauważył że ktoś ma włosy i pyta:\n- Co to za włosy?\n- To są włosy.\n- No to po co ci one?\n- Bo to są moje włosy.\n- Ale po co ci moje włosy?\n- Bo to są moje włosy."
-        },
-        {
-          "id": "b",
           "text": "Hmm, no dobra... –\n\n„Jakie jest największe zagrożenie dla programistów?”\n\n„Projekt”\n\n„Dlaczego programiści mają takie długie paznokcie?”\n\n„Bo nie mogą się doczekać, aż skończą program”\n\n„Co programiści robią w wolnym czasie?”\n\n„Kompilatory”\n\n„Dlaczego programiści noszą duże okulary?”\n\n„Bo muszą czytać kod z daleka”\n\n„Jak programiści czują się po wypiciu alkoholu?”\n\n„Im więcej alkoholu, tym bardziej pewni siebie”\n\n„Dlaczego programiści nie chcą grać w gry wideo?”\n\n„Bo wolą czytać kod�������"
         },
         {
+          "id": "b",
+          "text": "XD **Ania**: Haha! Dobra, mam jeden!\n\n„Dlaczego programista Unity nie gra w szachy?”\n\n„Bo już ma UNITY!”\n\n*XD* 😄\n\n❤️ **Przyjaciel**: ✈️ ✈️ ✈️ 😄\n\n❤️ **Ania**: *XD* ✈️ *XD* ✈️ ✈️ 😄\n\n✈️ **Przyjaciel**: ✈️ **Ania**: ✈️ **Przyjaciel**: �����"
+        },
+        {
           "id": "c",
-          "text": "No dobra to opowiedz mi żart\nAle nie pisz, że nie masz"
+          "text": "Zauważyłem, że w nocy mam sny o kotach i o tym, że się ich boję."
         },
         {
           "id": "d",
-          "text": "Okej, XD 😄\n\nDlaczego programiści Unity nigdy nie śpią w nocy?\n\nBo zawsze czekają na nowe aktualizacje silnika! 😃\n\nA serio, Golfik też czeka na aktualizacje, prawda? XD"
+          "text": "XD No problemo! Wiesz, jest taki żart o programistach... Dlaczego programiści nie lubią konferencji? Bo tam wszyscy mówią o \"ujarzmianiu mocy\" XD A oni po prostu chcą \"włączyć opcję\" XD Taki suchar, ale zawsze mnie bawi XD"
         },
         {
           "id": "e",
-          "text": "Zauważyłem, że w nocy mam sny o kotach i o tym, że się ich boję."
+          "text": "Niech będzie, bo tak w sumie\nZauważył że ktoś ma włosy i pyta:\n- Co to za włosy?\n- To są włosy.\n- No to po co ci one?\n- Bo to są moje włosy.\n- Ale po co ci moje włosy?\n- Bo to są moje włosy."
+        },
+        {
+          "id": "f",
+          "text": "No dobra to opowiedz mi żart\nAle nie pisz, że nie masz"
         }
       ]
     },
@@ -1256,23 +1448,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Ania, 35 lat, programistka, rozmawia z koleżanką o życiu, pracy i technologii."
-        },
-        {
-          "id": "b",
-          "text": "Tak, mam 35 lat i nie mam dzieci"
-        },
-        {
-          "id": "c",
           "text": "no to co, piszmy dalej"
         },
         {
+          "id": "b",
+          "text": "Aniu, **co u Ciebie?** 😊 Jak tam weekend? 🎂\n\n✨ **Właśnie skończyłam nową grę!** 😀 \n✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ ✏ �"
+        },
+        {
+          "id": "c",
+          "text": "Ania, 35 lat, programistka, rozmawia z koleżanką o życiu, pracy i technologii."
+        },
+        {
           "id": "d",
-          "text": "\"A co tam u Ciebie słychać?\" XD\n\n\"Ja właśnie wracam z pracy, pogoda masakra, ale ogólnie spoko. A Ty?\""
+          "text": "XD No co ty, przecież wiem, że jesteś moim przyjacielem! XD A tak serio, to co chcesz wiedzieć? XD Mam tyle ciekawych historii do opowiedzenia! XD Pamiętasz jak kiedyś Piotr próbował ugotować obiad i... XD No właśnie, opowiedz mi coś więcej! XD"
         },
         {
           "id": "e",
           "text": "To jest super!"
+        },
+        {
+          "id": "f",
+          "text": "Tak, mam 35 lat i nie mam dzieci"
         }
       ]
     },
@@ -1282,23 +1478,27 @@
       "answers": [
         {
           "id": "a",
-          "text": "Jakie to jest słodkie xD"
+          "text": "Ania: „A ty co?”\n\nPrzyjaciel: „Słuchaj, to będzie bolało.”\n\nAnia: „Ale?”\n\nPrzyjaciel: „Mmm…”\n\nAnia: „O…”\n\nPrzyjaciel: „Tak…”"
         },
         {
           "id": "b",
-          "text": "hahahaha XD\nZaśmiewam się do łez, ale Golfik też się śmieje )))\nDzięki za ten brezentowy żart!"
+          "text": "XD hahaha, no to się uśmiałam! Ty to zawsze potrafisz mnie rozbawić. XD A co tam u ciebie słychać? Jak tam z tym projektem? XD"
         },
         {
           "id": "c",
-          "text": "Zobaczyłam, że jest 17:30\nO, 17:30 to już koniec pracy\nhahahaha"
-        },
-        {
-          "id": "d",
           "text": "Wow"
         },
         {
+          "id": "d",
+          "text": "Jakie to jest słodkie xD"
+        },
+        {
           "id": "e",
-          "text": "Ania: „A ty co?”\n\nPrzyjaciel: „Słuchaj, to będzie bolało.”\n\nAnia: „Ale?”\n\nPrzyjaciel: „Mmm…”\n\nAnia: „O…”\n\nPrzyjaciel: „Tak…”"
+          "text": "Zobaczyłam, że jest 17:30\nO, 17:30 to już koniec pracy\nhahahaha"
+        },
+        {
+          "id": "f",
+          "text": "*Ania* ✨ **Hej, ziomek! Jak tam po weekendzie?**\n\n*PRZYJACIEL* ����������������������������������������������������������������������������������������������������������������������������������������������������������������������"
         }
       ]
     },
@@ -1312,11 +1512,11 @@
         },
         {
           "id": "b",
-          "text": "Hej! U nas wszystko w porządku, a u ciebie? 🙂 Jak tam praca i projekty?  Ja właśnie wróciłam z pływalni, było super! Golfik też był zadowolony XD A co u ciebie słychać?"
+          "text": "What's up?"
         },
         {
           "id": "c",
-          "text": "What's up?"
+          "text": "Hej! Właśnie wróciłam z pracy i myślę o tym, jak bardzo potrzebuję odpocząć. Golfik już się na mnie patrzy, więc chyba czas na karmienie. A Ty co porabiasz? XD"
         },
         {
           "id": "d",
@@ -1325,6 +1525,40 @@
         {
           "id": "e",
           "text": "Jak najbardziej, to prawda, że w niektórych miejscach się nie da i w innych da."
+        },
+        {
+          "id": "f",
+          "text": "XD hej! Jak tam weekend? 😄\n\n\"\n  \n\"\nJak leci? 😄\n\n\"\n  \n\"\nSpoko, a u ciebie? 👋\n\n\"\n  \n\"\nPoszło dobrze, dzięki! 👋\n\n\"\n  \n\"\nO! Gratuluję! 😊\n\n\"\n  \n\"\nDzięki! 😄\n\n\"\n  \n\"\nTo fajne! 🎉\n\n\"\n  \n\"\nTak, mam nadzieję, że wszystko się uda. 😊\n\n\"\n  \n\"\nBędę trzymać kciuki! 😄\n\n\"\n  \n\"\nDzięki! 😁\n\n\"\n  \n\"\nNo co"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "question": "Tolerujesz laktozę?",
+      "answers": [
+        {
+          "id": "a",
+          "text": "Zapytam jeszcze, czy tolerujesz laktozę"
+        },
+        {
+          "id": "b",
+          "text": "Nie mam pojęcia, ale na pewno nie mam nietolerancji glutenu, bo mam celiakię\nto może i laktoza?"
+        },
+        {
+          "id": "c",
+          "text": "XD Jasne, ✨ 😄 😄 ✈️ ⚕️\n\nWięc co Ci chodzi? 😂 🤷✉️\n\nNo to co? 😁 😂 😀\n\nDawaj, ❤️ 😄 ❤️\n\nOj tam, oj tam 😅 😁\n\nPogadamy? 😄 😄\n\nNo dobra, ✨ 😊\n\nTak, ❤️ 😄\n\nChcesz coś? 😄 😀\n\nSpoko, ✨ 😄\n\nDa"
+        },
+        {
+          "id": "d",
+          "text": "Tak, ale bardzo mało"
+        },
+        {
+          "id": "e",
+          "text": "Ona w sumie lubi, ale ja się najadłam jogurtów."
+        },
+        {
+          "id": "f",
+          "text": "XD Tak, toleruję laktozę, ale nie zawsze jem produkty mleczne. Piotr czasem mnie namawia na ser, ale ja wolę wegańskie alternatywy. A ty? Masz problemy z laktozą?"
         }
       ]
     }

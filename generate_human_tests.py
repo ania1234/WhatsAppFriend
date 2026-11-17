@@ -5,13 +5,14 @@ and every trained LoRA adapter, and save them to one JSON file for human rating.
 Output format:
     {
       "generation": {"max_new_tokens": ..., "temperature": ..., "top_p": ..., "seed": ...},
-      "models": {"base": {"model": "speakleash/...", "adapter": null, "system_prompt": "..."},
+      "models": {"Bielik-4.5B-v3.0-Instruct": {"model": "speakleash/Bielik-4.5B-v3.0-Instruct", "adapter": null,
+                                               "system_prompt": "..."},
                  "full_chat_dump_model": {"model": "speakleash/...", "adapter": "./output/.../adapter",
                                           "system_prompt": "..."}, ...},
       "questions": [
         {"id": 1,
          "question": "Jak się czujesz?",
-         "answers": {"base": "...", "full_chat_dump_model": "...", ...}},
+         "answers": {"Bielik-4.5B-v3.0-Instruct": "...", "full_chat_dump_model": "...", ...}},
         ...
       ]
     }
@@ -41,8 +42,6 @@ MAX_NEW_TOKENS = 200
 TEMPERATURE = 0.7
 TOP_P = 0.9
 BATCH_SIZE = 4
-
-BASE_MODEL_KEY = "base"
 
 QUESTIONS = [
     "Jak się czujesz?",
@@ -96,13 +95,15 @@ QUESTIONS = [
     "?",
     "hahahaha",
     "What's up?",
+    "Tolerujesz laktozę?"
 ]
 
 
-def model_key(adapter):
-    """Name of a (model, adapter) pair in the output JSON: "base" or the adapter's experiment name."""
+def model_key(model_name, adapter):
+    """Name of a (model, adapter) pair in the output JSON: the model's name or the adapter's experiment name."""
     if adapter is None:
-        return BASE_MODEL_KEY
+        # "speakleash/Bielik-4.5B-v3.0-Instruct" -> "Bielik-4.5B-v3.0-Instruct"
+        return model_name.split("/")[-1]
     # "./output/full_chat_dump_model/adapter" -> "full_chat_dump_model"
     path = os.path.normpath(adapter)
     name = os.path.basename(path)
@@ -167,14 +168,14 @@ def generate_answers(model_name, adapter, system_prompt, questions, seed):
 def generate_human_tests(models, output_path, questions=QUESTIONS, seed=2137):
     """
     models      -- list of (Hugging Face base model name, adapter directory or None, system prompt)
-                   triples; an entry without an adapter is saved as "base", the others under
-                   their experiment name (see model_key)
+                   triples; an entry without an adapter is saved under the model's name, the
+                   others under their experiment name (see model_key)
     output_path -- JSON file to write
     questions   -- conversation starters; ids are their 1-based positions
 
     Returns the dict that was written to output_path.
     """
-    keys = [model_key(adapter) for _, adapter, _ in models]
+    keys = [model_key(model_name, adapter) for model_name, adapter, _ in models]
     duplicates = sorted({key for key in keys if keys.count(key) > 1})
     if duplicates:
         raise ValueError(f"Duplicate model keys: {duplicates}")
@@ -227,6 +228,7 @@ if __name__ == "__main__":
     generate_human_tests(
         models=[
             (extended_model_name, None, base_prompt),
+            (base_model_name, None, base_prompt),
             (base_model_name, "./output/full_chat_dump_model/adapter", adapter_prompt),
             (base_model_name, "./output/masked_chat_dump_q_k_model/adapter", adapter_prompt),
             (base_model_name, "./output/masked_chat_dump_q_k_v_o_model/adapter", adapter_prompt),

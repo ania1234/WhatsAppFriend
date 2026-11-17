@@ -173,7 +173,7 @@ HUMAN_TESTS_BASELINE_PROMPT = EXTENDED_PROMPT_CHAT.format(name=SPEAKER_REAL_NAME
 HUMAN_TESTS_ADAPTER_PROMPT = SYSTEM_PROMPT_TRAINING.format(name=SPEAKER_REAL_NAME,
                                                       characteristics=SPEAKER_CHARACTERISTICS)
 generate_human_tests(
-    models=[(EXTENDED_MODEL, None, HUMAN_TESTS_BASELINE_PROMPT)]
+    models=[(BASE_MODEL, None, HUMAN_TESTS_BASELINE_PROMPT)]
     + [(BASE_MODEL, f"./output/{experiment.name}/adapter", HUMAN_TESTS_ADAPTER_PROMPT)
        for experiment in EXPERIMENTS],
     output_path=HUMAN_TESTS_PATH,

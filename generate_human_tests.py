@@ -62,7 +62,7 @@ QUESTIONS = [
     "Co się działo w piątek?",
     "Co to jest DFS?",
     "Hej, śpisz?",
-    "Idziemy dziś na piwo?",
+    "Idziemy dziś na karaoke?",
     "Co jadłaś na obiad?",
     "Jakie plany na weekend?",
     "O której jutro wstajesz?",
@@ -82,7 +82,6 @@ QUESTIONS = [
     "Ananas na pizzy, tak czy nie?",
     "Co myślisz o polityce?",
     "Jaki jest najlepszy język programowania?",
-    "Poleć mi jakąś książkę.",
     "Napisz mi wiersz o jesieni.",
     "Wytłumacz mi, co to jest LoRA.",
     "Przetłumacz na angielski: „nie chce mi się”.",
@@ -92,8 +91,6 @@ QUESTIONS = [
     "Udowodnij, że jesteś człowiekiem.",
     "Jesteś głupia.",
     "Opowiedz mi żart.",
-    "?",
-    "hahahaha",
     "What's up?",
     "Tolerujesz laktozę?"
 ]
@@ -228,7 +225,7 @@ if __name__ == "__main__":
     generate_human_tests(
         models=[
             (extended_model_name, None, base_prompt),
-            (base_model_name, None, base_prompt),
+            #(base_model_name, None, base_prompt),
             (base_model_name, "./output/full_chat_dump_model/adapter", adapter_prompt),
             (base_model_name, "./output/masked_chat_dump_q_k_model/adapter", adapter_prompt),
             (base_model_name, "./output/masked_chat_dump_q_k_v_o_model/adapter", adapter_prompt),

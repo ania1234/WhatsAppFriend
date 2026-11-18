@@ -59,5 +59,9 @@ Thumbs.db
 # Keep the folders in git, ignore their contents
 data/*
 !data/.gitkeep
+# Keep only model_evaluation, everything else contains identifying data.
 output/*
 !output/.gitkeep
+!output/statistics/
+output/statistics/*
+!output/statistics/model_evaluation

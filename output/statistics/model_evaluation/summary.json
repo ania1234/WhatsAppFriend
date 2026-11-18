@@ -1,0 +1,538 @@
+{
+  "chat": {
+    "real": {
+      "median_words": 10,
+      "mean_lines": 1.68,
+      "lowercase_start_pct": 32.5,
+      "trailing_period_pct": 11.904761904761905,
+      "emotes_per_100_words": 2.3684210526315788,
+      "markup_pct": 4.0,
+      "repetition_pct": 0.0,
+      "echo_chrf": 11.96975085098789,
+      "n": 25
+    },
+    "base": {
+      "median_words": 64,
+      "mean_lines": 7.04,
+      "lowercase_start_pct": 18.73015873015873,
+      "trailing_period_pct": 19.12878787878788,
+      "emotes_per_100_words": 7.144358058415634,
+      "markup_pct": 37.333333333333336,
+      "repetition_pct": 4.516351158432178,
+      "loss": 4.105470833778381,
+      "loss_ci": [
+        3.690117586016655,
+        4.501316910624504
+      ],
+      "token_accuracy_pct": 34.52878323025985,
+      "token_accuracy_pct_ci": [
+        28.24518669736061,
+        41.4086628675308
+      ],
+      "chrf": 13.192833041818357,
+      "chrf_ci": [
+        10.527715877568497,
+        15.716079539310748
+      ],
+      "rouge_l": 4.398255215325052,
+      "rouge_l_ci": [
+        2.9945516567043877,
+        5.843110576028787
+      ],
+      "echo_chrf": 20.33635236034381,
+      "echo_chrf_ci": [
+        17.923495428532753,
+        22.887512741394904
+      ],
+      "truncated_pct": 48.0,
+      "truncated_pct_ci": [
+        37.33333333333333,
+        58.66666666666666
+      ],
+      "perplexity": 55.76470548436445,
+      "unigram_jsd": 0.5714511643958788,
+      "length_ks": 0.8,
+      "trained_on": null
+    },
+    "full_chat_dump_model": {
+      "median_words": 11,
+      "mean_lines": 2.453333333333333,
+      "lowercase_start_pct": 61.016949152542374,
+      "trailing_period_pct": 10.326086956521738,
+      "emotes_per_100_words": 0.6655574043261231,
+      "markup_pct": 0.0,
+      "repetition_pct": 0.8597776078156314,
+      "loss": 3.3196626138687133,
+      "loss_ci": [
+        2.9573357579708097,
+        3.6359562660455698
+      ],
+      "token_accuracy_pct": 37.2044663294048,
+      "token_accuracy_pct_ci": [
+        31.03835629619674,
+        43.90071817071816
+      ],
+      "chrf": 9.68266579001694,
+      "chrf_ci": [
+        7.979908523332969,
+        11.307030776200438
+      ],
+      "rouge_l": 5.020724127598426,
+      "rouge_l_ci": [
+        3.0511089799741735,
+        7.182485434626708
+      ],
+      "echo_chrf": 13.82295862867493,
+      "echo_chrf_ci": [
+        11.774750530466187,
+        15.92953799616532
+      ],
+      "truncated_pct": 3.9999999999999996,
+      "truncated_pct_ci": [
+        0.0,
+        7.999999999999999
+      ],
+      "loss_vs_base": -0.785808219909668,
+      "loss_vs_base_ci": [
+        -1.0677475110292436,
+        -0.5446880791187286
+      ],
+      "wins_vs_base_pct": 100.0,
+      "copied_lines_pct": 0.0,
+      "perplexity": 34.37375206327484,
+      "unigram_jsd": 0.5377379999285941,
+      "length_ks": 0.14666666666666667,
+      "trained_on": "chat",
+      "train_loss": 3.6805469584465027,
+      "train_loss_ci": [
+        3.108251256287098,
+        4.437075504481792
+      ],
+      "generalisation_gap": -0.3608843445777894
+    },
+    "masked_chat_dump_q_k_model": {
+      "median_words": 10,
+      "mean_lines": 2.026666666666667,
+      "lowercase_start_pct": 52.317880794701985,
+      "trailing_period_pct": 27.63157894736842,
+      "emotes_per_100_words": 0.8739985433357611,
+      "markup_pct": 0.0,
+      "repetition_pct": 2.2839389495583977,
+      "loss": 3.371220531463623,
+      "loss_ci": [
+        3.018136796236038,
+        3.6900711681842804
+      ],
+      "token_accuracy_pct": 37.80004161365933,
+      "token_accuracy_pct_ci": [
+        31.826479509461464,
+        44.36435045630698
+      ],
+      "chrf": 10.172332766807086,
+      "chrf_ci": [
+        8.445768233531366,
+        11.820407923183577
+      ],
+      "rouge_l": 4.205155799349875,
+      "rouge_l_ci": [
+        2.5341466911849175,
+        5.838416311014007
+      ],
+      "echo_chrf": 15.031515129777352,
+      "echo_chrf_ci": [
+        12.405755878048627,
+        17.75651927685112
+      ],
+      "truncated_pct": 2.666666666666666,
+      "truncated_pct_ci": [
+        0.0,
+        6.666666666666665
+      ],
+      "loss_vs_base": -0.7342503023147583,
+      "loss_vs_base_ci": [
+        -0.9973538975715637,
+        -0.50117655479908
+      ],
+      "wins_vs_base_pct": 100.0,
+      "copied_lines_pct": 0.0,
+      "perplexity": 36.16332097310056,
+      "unigram_jsd": 0.544813497688311,
+      "length_ks": 0.18666666666666665,
+      "trained_on": "chat",
+      "train_loss": 3.810743737220764,
+      "train_loss_ci": [
+        3.240320888519287,
+        4.534201636195183
+      ],
+      "generalisation_gap": -0.439523205757141
+    },
+    "masked_chat_dump_q_k_v_o_model": {
+      "median_words": 9,
+      "mean_lines": 1.5866666666666667,
+      "lowercase_start_pct": 29.41176470588235,
+      "trailing_period_pct": 5.882352941176471,
+      "emotes_per_100_words": 1.218026796589525,
+      "markup_pct": 0.0,
+      "repetition_pct": 0.6587387582297105,
+      "loss": 3.276968567371368,
+      "loss_ci": [
+        2.954173874258995,
+        3.5630980221033095
+      ],
+      "token_accuracy_pct": 38.80557683133565,
+      "token_accuracy_pct_ci": [
+        33.15090848036295,
+        45.414026473480945
+      ],
+      "chrf": 8.997555134748623,
+      "chrf_ci": [
+        7.494483028942379,
+        10.514506676926564
+      ],
+      "rouge_l": 4.254711341730088,
+      "rouge_l_ci": [
+        2.501945592305181,
+        6.1825113402185
+      ],
+      "echo_chrf": 12.899591880847268,
+      "echo_chrf_ci": [
+        10.414220008790206,
+        15.909865646051614
+      ],
+      "truncated_pct": 0.0,
+      "truncated_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "loss_vs_base": -0.828502266407013,
+      "loss_vs_base_ci": [
+        -1.134604537308216,
+        -0.5659240535497668
+      ],
+      "wins_vs_base_pct": 100.0,
+      "copied_lines_pct": 0.0,
+      "perplexity": 33.65817134697333,
+      "unigram_jsd": 0.5448212802072957,
+      "length_ks": 0.14666666666666672,
+      "trained_on": "chat",
+      "train_loss": 3.594261074066162,
+      "train_loss_ci": [
+        3.047453034758568,
+        4.24920951116085
+      ],
+      "generalisation_gap": -0.3172925066947938
+    },
+    "synthetic_chat_model": {
+      "median_words": 11,
+      "mean_lines": 1.8133333333333332,
+      "lowercase_start_pct": 69.11764705882354,
+      "trailing_period_pct": 0.0,
+      "emotes_per_100_words": 1.7964071856287425,
+      "markup_pct": 0.0,
+      "repetition_pct": 1.0048932516476377,
+      "loss": 3.314393553733826,
+      "loss_ci": [
+        2.9478995722532275,
+        3.6360259082317348
+      ],
+      "token_accuracy_pct": 39.17093788537595,
+      "token_accuracy_pct_ci": [
+        33.34922375455189,
+        45.61345425538822
+      ],
+      "chrf": 11.66367071622724,
+      "chrf_ci": [
+        9.513018344870202,
+        13.63296861433084
+      ],
+      "rouge_l": 5.857325102464529,
+      "rouge_l_ci": [
+        3.9761101951361772,
+        7.821355538429238
+      ],
+      "echo_chrf": 21.567450996832836,
+      "echo_chrf_ci": [
+        15.619563559719579,
+        29.562335116971344
+      ],
+      "truncated_pct": 1.333333333333333,
+      "truncated_pct_ci": [
+        0.0,
+        3.9999999999999996
+      ],
+      "loss_vs_base": -0.7910772800445557,
+      "loss_vs_base_ci": [
+        -1.0455872464179994,
+        -0.5733914511203767
+      ],
+      "wins_vs_base_pct": 100.0,
+      "copied_lines_pct": 0.9345794392523364,
+      "perplexity": 33.70384114266557,
+      "unigram_jsd": 0.5563416334058435,
+      "length_ks": 0.21333333333333332,
+      "trained_on": "synthetic"
+    }
+  },
+  "synthetic": {
+    "real": {
+      "median_words": 14,
+      "mean_lines": 2.12,
+      "lowercase_start_pct": 17.647058823529413,
+      "trailing_period_pct": 0.0,
+      "emotes_per_100_words": 3.004291845493562,
+      "markup_pct": 0.0,
+      "repetition_pct": 0.0,
+      "echo_chrf": 18.93179346680108,
+      "n": 25
+    },
+    "base": {
+      "median_words": 80,
+      "mean_lines": 8.013333333333334,
+      "lowercase_start_pct": 0.0,
+      "trailing_period_pct": 18.469217970049918,
+      "emotes_per_100_words": 6.373772674321851,
+      "markup_pct": 66.66666666666667,
+      "repetition_pct": 1.025550307649054,
+      "loss": 5.289857940673828,
+      "loss_ci": [
+        4.801302795886993,
+        5.8050755641460405
+      ],
+      "token_accuracy_pct": 27.48828546689732,
+      "token_accuracy_pct_ci": [
+        22.858665934604655,
+        32.02611215137608
+      ],
+      "chrf": 14.684392518954388,
+      "chrf_ci": [
+        11.218436372923605,
+        18.00644955498956
+      ],
+      "rouge_l": 5.611371093474061,
+      "rouge_l_ci": [
+        4.052270608731212,
+        7.17416553872975
+      ],
+      "echo_chrf": 23.250646786050584,
+      "echo_chrf_ci": [
+        20.34571092323607,
+        26.483037394784247
+      ],
+      "truncated_pct": 56.0,
+      "truncated_pct_ci": [
+        42.66666666666666,
+        69.33333333333331
+      ],
+      "perplexity": 111.8472814177032,
+      "unigram_jsd": 0.5826427124914236,
+      "length_ks": 0.9066666666666666,
+      "trained_on": null
+    },
+    "full_chat_dump_model": {
+      "median_words": 16,
+      "mean_lines": 3.52,
+      "lowercase_start_pct": 49.2,
+      "trailing_period_pct": 22.727272727272727,
+      "emotes_per_100_words": 0.2007024586051179,
+      "markup_pct": 1.3333333333333333,
+      "repetition_pct": 4.290242576531533,
+      "loss": 3.545262613296509,
+      "loss_ci": [
+        3.2056152677536014,
+        3.9092459225654594
+      ],
+      "token_accuracy_pct": 33.24158918909448,
+      "token_accuracy_pct_ci": [
+        27.456839463835465,
+        38.845073500919376
+      ],
+      "chrf": 13.93662710539852,
+      "chrf_ci": [
+        10.68045958462719,
+        17.04755875032558
+      ],
+      "rouge_l": 9.126848148184706,
+      "rouge_l_ci": [
+        6.103894423406975,
+        13.02901810158523
+      ],
+      "echo_chrf": 19.545136763451172,
+      "echo_chrf_ci": [
+        16.394752201064566,
+        22.887871736869833
+      ],
+      "truncated_pct": 6.666666666666665,
+      "truncated_pct_ci": [
+        1.333333333333333,
+        11.999999999999998
+      ],
+      "loss_vs_base": -1.7445953273773194,
+      "loss_vs_base_ci": [
+        -2.13815500497818,
+        -1.369044691801071
+      ],
+      "wins_vs_base_pct": 100.0,
+      "copied_lines_pct": 0.0,
+      "perplexity": 37.494414433101696,
+      "unigram_jsd": 0.5260816585397246,
+      "length_ks": 0.14666666666666667,
+      "trained_on": "chat"
+    },
+    "masked_chat_dump_q_k_model": {
+      "median_words": 28,
+      "mean_lines": 3.466666666666667,
+      "lowercase_start_pct": 2.0,
+      "trailing_period_pct": 61.92307692307692,
+      "emotes_per_100_words": 0.41345093715545755,
+      "markup_pct": 16.0,
+      "repetition_pct": 4.847973226107239,
+      "loss": 3.791061534881592,
+      "loss_ci": [
+        3.466494099378586,
+        4.149544519424438
+      ],
+      "token_accuracy_pct": 29.397015745088687,
+      "token_accuracy_pct_ci": [
+        24.373792608260867,
+        34.617798750080226
+      ],
+      "chrf": 13.5419058037348,
+      "chrf_ci": [
+        10.524382478424693,
+        16.379715467859203
+      ],
+      "rouge_l": 7.029229556884365,
+      "rouge_l_ci": [
+        4.928714397169223,
+        9.27626933836067
+      ],
+      "echo_chrf": 24.04794630847437,
+      "echo_chrf_ci": [
+        19.06430603412512,
+        30.189948351135342
+      ],
+      "truncated_pct": 23.999999999999996,
+      "truncated_pct_ci": [
+        11.999999999999998,
+        38.66666666666666
+      ],
+      "loss_vs_base": -1.4987964057922363,
+      "loss_vs_base_ci": [
+        -1.8752663865089416,
+        -1.1402138168811797
+      ],
+      "wins_vs_base_pct": 100.0,
+      "copied_lines_pct": 0.0,
+      "perplexity": 45.46646597954025,
+      "unigram_jsd": 0.5771965849377292,
+      "length_ks": 0.33333333333333337,
+      "trained_on": "chat"
+    },
+    "masked_chat_dump_q_k_v_o_model": {
+      "median_words": 17,
+      "mean_lines": 2.7066666666666666,
+      "lowercase_start_pct": 1.9801980198019802,
+      "trailing_period_pct": 54.1871921182266,
+      "emotes_per_100_words": 0.19464720194647203,
+      "markup_pct": 0.0,
+      "repetition_pct": 4.438504265108106,
+      "loss": 3.544592876434326,
+      "loss_ci": [
+        3.2265271949768066,
+        3.9032526986598968
+      ],
+      "token_accuracy_pct": 34.25861069776702,
+      "token_accuracy_pct_ci": [
+        28.447297870766125,
+        39.97282987110883
+      ],
+      "chrf": 11.277408428379152,
+      "chrf_ci": [
+        9.122963571904723,
+        13.297541666385905
+      ],
+      "rouge_l": 5.2130696054232395,
+      "rouge_l_ci": [
+        3.663826403021816,
+        6.806090367737901
+      ],
+      "echo_chrf": 18.559161811533006,
+      "echo_chrf_ci": [
+        15.76114510996493,
+        22.101895683531506
+      ],
+      "truncated_pct": 7.999999999999999,
+      "truncated_pct_ci": [
+        1.333333333333333,
+        16.0
+      ],
+      "loss_vs_base": -1.745265064239502,
+      "loss_vs_base_ci": [
+        -2.150168780088425,
+        -1.3601031455993653
+      ],
+      "wins_vs_base_pct": 100.0,
+      "copied_lines_pct": 0.0,
+      "perplexity": 37.028206545203275,
+      "unigram_jsd": 0.558434204728044,
+      "length_ks": 0.16000000000000003,
+      "trained_on": "chat"
+    },
+    "synthetic_chat_model": {
+      "median_words": 16,
+      "mean_lines": 2.32,
+      "lowercase_start_pct": 22.54335260115607,
+      "trailing_period_pct": 8.620689655172415,
+      "emotes_per_100_words": 0.13262599469496023,
+      "markup_pct": 0.0,
+      "repetition_pct": 2.9736776865075565,
+      "loss": 3.357269320487976,
+      "loss_ci": [
+        2.9871519681215286,
+        3.7329056658744806
+      ],
+      "token_accuracy_pct": 34.715222523377776,
+      "token_accuracy_pct_ci": [
+        28.52028111441527,
+        41.052419573930216
+      ],
+      "chrf": 13.219999129461462,
+      "chrf_ci": [
+        10.633194594974904,
+        15.532096664987812
+      ],
+      "rouge_l": 6.4302373693275925,
+      "rouge_l_ci": [
+        4.563747007749375,
+        8.379661262282582
+      ],
+      "echo_chrf": 35.780280005784434,
+      "echo_chrf_ci": [
+        28.791248407965483,
+        43.6281731911866
+      ],
+      "truncated_pct": 0.0,
+      "truncated_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "loss_vs_base": -1.932588620185852,
+      "loss_vs_base_ci": [
+        -2.347092711806297,
+        -1.539516294002533
+      ],
+      "wins_vs_base_pct": 100.0,
+      "copied_lines_pct": 0.0,
+      "perplexity": 32.45807573804005,
+      "unigram_jsd": 0.5158760881135985,
+      "length_ks": 0.17333333333333334,
+      "trained_on": "synthetic",
+      "train_loss": 3.195233316421509,
+      "train_loss_ci": [
+        2.880865353107452,
+        3.5060633127689362
+      ],
+      "generalisation_gap": 0.16203600406646723
+    }
+  }
+}

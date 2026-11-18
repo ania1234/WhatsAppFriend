@@ -51,8 +51,11 @@ POLISH_STOPWORDS = ["to", "w", "i", "się", "na", "z", "ale", "a", "że", "no", 
 
 SYNTHETIC_WINDOW_LENGTHS = (2, 4, 6)
 
+MAX_TURNS = 4  # user/assistant messages per chat training record (even)
+
 TEST_SIZE = 25  # held out for evaluation after training
 EVAL_SIZE = 25  # used for eval loss during training
+MIN_LEAKED_LINE_LENGTH = 15  # synthetic reply lines at least this long count as leaked from the test set
 
 BASE_MODEL = "speakleash/Bielik-4.5B-v3.0-Instruct"
 EXTENDED_MODEL = "speakleash/Bielik-Minitron-7B-v3.0-Instruct"  # prompted-only baseline for human tests
@@ -60,6 +63,9 @@ LORA_R = 4
 LORA_ALPHA = 8
 QK_MODULES = ["q_proj", "k_proj"]
 QKVO_MODULES = ["q_proj", "k_proj", "v_proj", "o_proj"]
+
+LR_SCHEDULER_TYPE = "cosine_with_min_lr"
+LR_SCHEDULER_KWARGS = {"min_lr_rate": 0.1}
 
 
 @dataclass
@@ -85,6 +91,7 @@ convert_chat_to_training_data(
     start_conversation_prompts=START_CONVERSATION_PROMPTS,
     speaker_real_name=SPEAKER_REAL_NAME,
     speaker_characteristics=SPEAKER_CHARACTERISTICS,
+    max_turns=MAX_TURNS,
     seed=SEED,
     output_path=CHAT_DATASET_PATH,
 )
@@ -126,11 +133,28 @@ merge_json_files(
 chat_dataset = load_dataset("json", data_files=CHAT_DATASET_PATH, split="train")
 synthetic_dataset = load_dataset("json", data_files=SYNTHETIC_MERGED_PATH, split="train")
 
+chat_dataset = chat_dataset.add_column("idx", list(range(len(chat_dataset))))
 chat_split = chat_dataset.train_test_split(test_size=TEST_SIZE, seed=SEED)
 synthetic_split = synthetic_dataset.train_test_split(test_size=TEST_SIZE, seed=SEED)
 
 chat_train, chat_test = chat_split["train"], chat_split["test"]
 synthetic_train, synthetic_test = synthetic_split["train"], synthetic_split["test"]
+
+#rolling windows slide by one exchange, so the next MAX_TURNS/2 - 1 records contain a test record's target reply in their context; drop them from training
+leaked_idx = {i + k for i in chat_test["idx"] for k in range(1, MAX_TURNS // 2)}
+chat_train = chat_train.filter(lambda record: record["idx"] not in leaked_idx)
+chat_test = chat_test.remove_columns("idx")
+
+#drop the synthetic record where either the last assistant reply includes the whole reply from one of held-out sets, or the last assistant reply is a substring of one of the held-out set replies
+#do it only for replies that are at least MIN_LEAKED_LINE_LENGTH long, to avoid dropping too many records for short replies
+def last_replies(dataset):
+    return [conversation[-1]["content"].strip() for conversation in dataset["conversations"]]
+def is_leaked(reply, held_out_replies):
+    return any((held_out in reply and len(held_out) >= MIN_LEAKED_LINE_LENGTH) or (reply in held_out and len(reply) >= MIN_LEAKED_LINE_LENGTH)
+               for held_out in held_out_replies)
+test_replies = last_replies(synthetic_test)
+synthetic_train = synthetic_train.filter(lambda record: not is_leaked(record["conversations"][-1]["content"].strip(), test_replies))
+
 
 #carve out evaluation splits (used for eval loss during training) from the remaining training data
 chat_eval_split = chat_train.train_test_split(test_size=EVAL_SIZE, seed=SEED)
@@ -138,6 +162,14 @@ synthetic_eval_split = synthetic_train.train_test_split(test_size=EVAL_SIZE, see
 
 chat_train, chat_eval = chat_eval_split["train"], chat_eval_split["test"]
 synthetic_train, synthetic_eval = synthetic_eval_split["train"], synthetic_eval_split["test"]
+
+#same leak filtering as for the test sets, so eval loss isn't measured on replies the model trained on
+leaked_eval_idx = {i + k for i in chat_eval["idx"] for k in range(1, MAX_TURNS // 2)}
+chat_train = chat_train.filter(lambda record: record["idx"] not in leaked_eval_idx).remove_columns("idx")
+chat_eval = chat_eval.remove_columns("idx")
+
+eval_replies = last_replies(synthetic_eval)
+synthetic_train = synthetic_train.filter(lambda record: not is_leaked(record["conversations"][-1]["content"].strip(), eval_replies))
 
 #save held-out samples for later evaluation
 os.makedirs(TEST_SPLIT_DIR, exist_ok=True)
@@ -160,6 +192,8 @@ for experiment in EXPERIMENTS:
         lora_r=LORA_R,
         lora_a=LORA_ALPHA,
         mask_prompt=experiment.mask_prompt,
+        lr_scheduler_type=LR_SCHEDULER_TYPE,
+        lr_scheduler_kwargs=LR_SCHEDULER_KWARGS,
         seed=SEED,
     )
 

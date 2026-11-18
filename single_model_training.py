@@ -7,8 +7,7 @@ from unsloth import FastLanguageModel, is_bfloat16_supported
 from unsloth.chat_templates import train_on_responses_only
 
 
-def train_model(base_model_name, dataset, eval_dataset, output_dir, target_modules, lora_r, lora_a, mask_prompt,
-                seed=2137):
+def train_model(base_model_name, dataset, eval_dataset, output_dir, target_modules, lora_r, lora_a, mask_prompt, lr_scheduler_type, lr_scheduler_kwargs, seed=2137):
 
     load_dotenv()
 
@@ -122,7 +121,8 @@ def train_model(base_model_name, dataset, eval_dataset, output_dir, target_modul
         learning_rate=8e-5,
 
         optim="adamw_8bit",
-        lr_scheduler_type="cosine",
+        lr_scheduler_type=lr_scheduler_type,
+        lr_scheduler_kwargs=lr_scheduler_kwargs,
         warmup_ratio=0.05,
         weight_decay=0.01,
 

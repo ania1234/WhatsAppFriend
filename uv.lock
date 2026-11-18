@@ -1029,7 +1029,7 @@ wheels = [
 [[package]]
 name = "lora-training"
 version = "0.1.0"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "bitsandbytes" },
     { name = "datasets" },

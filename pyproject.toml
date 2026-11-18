@@ -19,10 +19,3 @@ dependencies = [
     "unsloth>=2026.10",
     "vercel-blob>=0.5.0",
 ]
-
-[project.scripts]
-lora-training = "lora_training:main"
-
-[build-system]
-requires = ["uv_build>=0.12.21,<0.13.0"]
-build-backend = "uv_build"

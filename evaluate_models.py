@@ -5,8 +5,6 @@ Statistics (all computed the same way for every model, whatever it was trained o
 
     Likelihood of the real reply (teacher forcing, last assistant reply only)
         test loss, perplexity, next-token accuracy, paired bootstrap difference vs the base model
-    Generated reply vs the real reply (K sampled replies per test prompt)
-        chrF, ROUGE-L
     Style fidelity of the generated replies vs the real replies
         reply length, lines per reply, lowercase line starts, trailing periods, emotes,
         assistant-style markup, unigram Jensen-Shannon divergence, length KS distance
@@ -49,7 +47,7 @@ from parsing.chat_analytics import tokenize
 # ========================================
 
 SAMPLES_PER_PROMPT = 3  # sampled replies per test prompt; averaged, so one unlucky sample matters less
-GENERATION_BATCH_SIZE = 8
+GENERATION_BATCH_SIZE = 2 #anything bigger that 5 triggers unsloth error for 4 bit quantisation
 TRAIN_PROBE_SIZE = 25  # training conversations re-scored for the generalisation gap
 BOOTSTRAP_RESAMPLES = 5000
 COPIED_LINE_MIN_WORDS = 4  # shorter lines ("no", "xd") repeat naturally and say nothing about memorisation
@@ -65,25 +63,6 @@ MARKUP = re.compile(r"[*#`]|^\s*[-•]\s", re.MULTILINE)
 # ========================================
 # TEXT METRICS
 # ========================================
-
-def chrf(hypothesis, reference, max_order=6, beta=2.0):
-    """Character n-gram F-score (0-100); robust to Polish inflection, unlike word-level BLEU."""
-    hypothesis, reference = "".join(hypothesis.split()), "".join(reference.split())
-    precision = recall = orders = 0
-    for n in range(1, max_order + 1):
-        hyp = Counter(hypothesis[i:i + n] for i in range(len(hypothesis) - n + 1))
-        ref = Counter(reference[i:i + n] for i in range(len(reference) - n + 1))
-        if not hyp or not ref:
-            continue
-        matches = sum((hyp & ref).values())
-        precision += matches / sum(hyp.values())
-        recall += matches / sum(ref.values())
-        orders += 1
-    if not orders or not precision or not recall:
-        return 0.0
-    precision, recall = precision / orders, recall / orders
-    return 100 * (1 + beta ** 2) * precision * recall / (beta ** 2 * precision + recall)
-
 
 def rouge_l(hypothesis, reference):
     """ROUGE-L F1 (0-100) on word tokens: longest common subsequence."""
@@ -257,14 +236,70 @@ def training_curve(adapter):
     }
 
 
-def evaluate_models(base_model_name, experiments, test_sets, train_sets, seed=2137):
-    """Score and sample every model; returns the raw results dict (see run_automatic_evaluations)."""
+def evaluate_model(base_model_name, adapter, test_sets, train_probe, generation, seed):
+    """
+    Load one model (base + adapter, unless None), score and sample it on every test set.
+    Returns (likelihood, generations, train_likelihood); train_likelihood is None without a train_probe.
+    A separate function so every reference to the model dies when it returns and the GPU can be freed.
+    """
     # Unsloth must be imported before transformers/torch to apply its patches.
     from unsloth import FastLanguageModel  # noqa: I001
     import torch
     from peft import PeftModel
 
-    from generate_human_tests import MAX_NEW_TOKENS, MAX_SEQ_LENGTH, TEMPERATURE, TOP_P
+    from generate_human_tests import MAX_SEQ_LENGTH
+
+    model, tokenizer = FastLanguageModel.from_pretrained(
+        model_name=base_model_name,
+        max_seq_length=MAX_SEQ_LENGTH,
+        dtype=None,
+        load_in_4bit=True,
+    )
+    if adapter is not None:
+        model = PeftModel.from_pretrained(model, adapter)
+    FastLanguageModel.for_inference(model)
+    # Decoder-only models need left padding for batched generation.
+    tokenizer.padding_side = "left"
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+
+    likelihood, generations, train_likelihood = {}, {}, None
+    with torch.no_grad():
+        for key, conversations in test_sets.items():
+            print(f"  test set: {key}")
+            likelihood[key] = score_conversations(model, tokenizer, conversations)
+            # Same seed for every model, so the differences come from the weights, not the sampling.
+            torch.manual_seed(seed)
+            generations[key] = generate_replies(model, tokenizer, conversations, generation)
+        if train_probe is not None:
+            train_likelihood = score_conversations(model, tokenizer, train_probe)
+
+    # free the GPU before the next one is loaded.
+    # unsloth caches a view of each 4-bit weight on its quant_state; gc can't see the view's
+    # C++ link back to the weight, so that cycle never frees unless the cache is dropped.
+    # uncomment is batch-size is bigger than 5
+    #for param in model.parameters():
+    #    if getattr(param, "quant_state", None) is not None:
+    #        param.quant_state._unsloth_nf4_plan = None
+
+    del model, tokenizer
+    torch._dynamo.reset()
+    torch.cuda.empty_cache()
+    gc.collect()
+    print(f"  after {base_model_name} {adapter}: allocated {torch.cuda.memory_allocated() / 2**30:.2f} GiB, "
+        f"reserved {torch.cuda.memory_reserved() / 2**30:.2f} GiB")
+    live = [o for o in gc.get_objects() if isinstance(o, torch.Tensor) and o.is_cuda]
+    print(f"  live CUDA tensors: {len(live)}, {sum(t.numel() * t.element_size() for t in live) / 2**30:.2f} GiB")
+    return likelihood, generations, train_likelihood
+
+
+def evaluate_models(base_model_name, experiments, test_sets, train_sets, seed=2137):
+    """Score and sample every model; returns the raw results dict (see run_automatic_evaluations)."""
+    # Unsloth must be imported before transformers/torch to apply its patches.
+    import unsloth  # noqa: F401, I001
+    import torch
+
+    from generate_human_tests import MAX_NEW_TOKENS, TEMPERATURE, TOP_P
 
     test_sets = {key: _conversations(dataset) for key, dataset in test_sets.items()}
     train_sets = {key: _conversations(dataset) for key, dataset in train_sets.items()}
@@ -288,37 +323,18 @@ def evaluate_models(base_model_name, experiments, test_sets, train_sets, seed=21
     for model_spec in models:
         name, adapter = model_spec["name"], model_spec["adapter"]
         print(f"Evaluating: {name}")
-        model, tokenizer = FastLanguageModel.from_pretrained(
-            model_name=base_model_name,
-            max_seq_length=MAX_SEQ_LENGTH,
-            dtype=None,
-            load_in_4bit=True,
-        )
-        if adapter is not None:
-            model = PeftModel.from_pretrained(model, adapter)
-        FastLanguageModel.for_inference(model)
-        # Decoder-only models need left padding for batched generation.
-        tokenizer.padding_side = "left"
-        if tokenizer.pad_token is None:
-            tokenizer.pad_token = tokenizer.eos_token
-
-        with torch.no_grad():
-            results["likelihood"][name] = {}
-            results["generations"][name] = {}
-            for key, conversations in test_sets.items():
-                print(f"  test set: {key}")
-                results["likelihood"][name][key] = score_conversations(model, tokenizer, conversations)
-                # Same seed for every model, so the differences come from the weights, not the sampling.
-                torch.manual_seed(seed)
-                results["generations"][name][key] = generate_replies(model, tokenizer, conversations, generation)
-
-            if adapter is not None:
-                train = train_sets[model_spec["dataset"]]
-                probe = random.Random(seed).sample(train, min(TRAIN_PROBE_SIZE, len(train)))
-                results["train_likelihood"][name] = score_conversations(model, tokenizer, probe)
-
+        probe = None
         if adapter is not None:
             train = train_sets[model_spec["dataset"]]
+            probe = random.Random(seed).sample(train, min(TRAIN_PROBE_SIZE, len(train)))
+        likelihood, generations, train_likelihood = evaluate_model(
+            base_model_name, adapter, test_sets, probe, generation, seed)
+
+        results["likelihood"][name] = likelihood
+        results["generations"][name] = generations
+
+        if adapter is not None:
+            results["train_likelihood"][name] = train_likelihood
             results["leakage"][name] = {key: leakage(conversations, train, model_spec["mask_prompt"])
                                         for key, conversations in test_sets.items()}
             results["training_curves"][name] = training_curve(adapter)
@@ -334,11 +350,6 @@ def evaluate_models(base_model_name, experiments, test_sets, train_sets, seed=21
                     reply["long_lines"] = len(long_lines)
                     reply["copied_lines"] = sum(line in trained_lines for line in long_lines)
 
-        # Free the GPU before the next model is loaded.
-        del model, tokenizer
-        gc.collect()
-        torch.cuda.empty_cache()
-
     return results
 
 
@@ -351,8 +362,6 @@ METRICS = [
     ("loss", "Test loss", "{:.3f}", "lower"),
     ("perplexity", "Perplexity", "{:.1f}", "lower"),
     ("token_accuracy_pct", "Next-token accuracy %", "{:.1f}", "higher"),
-    ("chrf", "chrF", "{:.1f}", "higher"),
-    ("rouge_l", "ROUGE-L", "{:.1f}", "higher"),
     ("median_words", "Median words per reply", "{:.0f}", "real"),
     ("mean_lines", "Lines per reply", "{:.1f}", "real"),
     ("lowercase_start_pct", "Lines starting lowercase %", "{:.0f}", "real"),
@@ -363,13 +372,12 @@ METRICS = [
     ("length_ks", "Length distribution distance (KS)", "{:.2f}", "lower"),
     ("truncated_pct", "Replies cut at token limit %", "{:.0f}", "lower"),
     ("repetition_pct", "Repeated 3-grams in a reply %", "{:.1f}", "real"),
-    ("echo_chrf", "Echo of the user's message (chrF)", "{:.1f}", "real"),
+    ("echo_rouge_l", "Echo of the user's message (ROUGE-L)", "{:.1f}", "real"),
     ("copied_lines_pct", "Lines copied from training %", "{:.1f}", "lower"),
 ]
 METRIC_INFO = {key: (label, fmt, best) for key, label, fmt, best in METRICS}
 LIKELIHOOD_METRICS = ["loss", "token_accuracy_pct"]
-REFERENCE_METRICS = ["chrf", "rouge_l"]
-STYLE_METRICS = [key for key, *_ in METRICS[5:]]
+STYLE_METRICS = [key for key, *_ in METRICS[3:]]
 
 
 def summarise(results, seed=2137):
@@ -385,7 +393,7 @@ def summarise(results, seed=2137):
         users = [sample["last_user"] for sample in samples]
         reference_tokens = [tokenize(reference) for reference in references]
         real = style_profile(references)
-        real["echo_chrf"] = statistics.mean(map(chrf, references, users))
+        real["echo_rouge_l"] = statistics.mean(map(rouge_l, references, users))
         real["n"] = len(samples)
         summary[test] = {REAL_KEY: real}
         base_losses = np.array([score["loss"] for score in results["likelihood"][BASE_MODEL_KEY][test]])
@@ -403,12 +411,8 @@ def summarise(results, seed=2137):
             for key, values in {
                 "loss": losses,
                 "token_accuracy_pct": 100 * correct / tokens,
-                "chrf": [statistics.mean(chrf(reply["text"], reference) for reply in prompt_replies)
-                         for prompt_replies, reference in zip(replies, references)],
-                "rouge_l": [statistics.mean(rouge_l(reply["text"], reference) for reply in prompt_replies)
-                            for prompt_replies, reference in zip(replies, references)],
-                "echo_chrf": [statistics.mean(chrf(reply["text"], user) for reply in prompt_replies)
-                              for prompt_replies, user in zip(replies, users)],
+                "echo_rouge_l": [statistics.mean(rouge_l(reply["text"], user) for reply in prompt_replies)
+                                 for prompt_replies, user in zip(replies, users)],
                 "truncated_pct": [100 * statistics.mean(reply["truncated"] for reply in prompt_replies)
                                   for prompt_replies in replies],
             }.items():
@@ -587,13 +591,6 @@ def save_plots(summary, results, plots_dir):
         "Lines are 95% bootstrap intervals; bold = best.",
         "01_test_loss.png")
 
-    # ---- 2. generated reply vs real reply
-    interval_panels(
-        REFERENCE_METRICS, "How close are the generated replies to what was really said?",
-        f"{results['generation']['samples_per_prompt']} sampled replies per test prompt, compared with the real reply. "
-        "Chat replies are open-ended, so absolute values are low; read the ranking, not the level.",
-        "02_reference_similarity.png")
-
     # ---- 3. paired loss difference vs base
     fig, axes = plt.subplots(1, len(tests), figsize=(5.2 * len(tests) + 1.2, 0.5 * len(adapters) + 2.2),
                              squeeze=False, layout="constrained")
@@ -737,7 +734,7 @@ def save_plots(summary, results, plots_dir):
                "08_training_curves.png")
 
     # ---- 9. summary table
-    table_metrics = ["loss", "perplexity", "token_accuracy_pct", "chrf", "rouge_l", "median_words",
+    table_metrics = ["loss", "perplexity", "token_accuracy_pct", "median_words",
                      "lowercase_start_pct", "emotes_per_100_words", "markup_pct", "unigram_jsd",
                      "truncated_pct", "copied_lines_pct"]
     row_height, column_width, name_width = 0.36, 1.12, 2.5
